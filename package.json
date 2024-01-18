@@ -8,9 +8,14 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write **/*.{astro,js,mjs,json,ts,yml,yaml} --plugin=prettier-plugin-astro",
-    "lint": "eslint src/**/*.{astro,js,mjs,ts}",
-    "lint:fix": "eslint --fix src/**/*.{astro,js,mjs,ts}"
+    "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}' --plugin=prettier-plugin-astro",
+    "lint": "eslint 'src/**/*.{astro,js,mjs,ts}'",
+    "lint:fix": "eslint --fix 'src/**/*.{astro,js,mjs,ts}'",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{astro,js,mjs,json,ts,yml,yaml}": "pnpm run format",
+    "**/*.{astro,js,mjs,ts}": "pnpm run lint"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
@@ -21,6 +26,8 @@
     "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.31.3",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.12.3"
   }

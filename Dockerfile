@@ -1,6 +1,10 @@
 FROM node:20-slim as base
 
-RUN npm install -g pnpm@8
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends git && \
+  npm install -g pnpm@8 && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
