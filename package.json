@@ -11,6 +11,10 @@
     "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}' --plugin=prettier-plugin-astro",
     "prepare": "husky install"
   },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
   "lint-staged": {
     "**/*.{astro,js,mjs,json,ts,yml,yaml}": "pnpm run format"
   },
