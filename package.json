@@ -1,0 +1,32 @@
+{
+  "name": "gocon2024",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}' --plugin=prettier-plugin-astro",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  },
+  "lint-staged": {
+    "**/*.{astro,js,mjs,json,ts,yml,yaml}": "pnpm run format"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.4.1",
+    "astro": "^4.2.3",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.4",
+    "prettier-plugin-astro": "^0.12.3"
+  }
+}
