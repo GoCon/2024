@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
 import { siteName } from "../domain/constants";
+import Sponsors from "../components/Sponsors.astro";
 ---
 
 <BaseLayout>
   <title slot="title">Home | {siteName}</title>
   <h1>Astro</h1>
+  <Sponsors />
 </BaseLayout>
