@@ -12,7 +12,7 @@ const { sponsor } = Astro.props;
 import BaseLayout from "../../layouts/Base.astro";
 ---
 
-<BaseLayout>
+<BaseLayout title={sponsor.name}>
   <h1>{sponsor.name}</h1>
   <Image
     src={sponsor.image}
