@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+export async function getStaticPaths() {
+  const sponsors = await getEntry("sponsors", "data");
+  return sponsors.data.map((sponsor) => ({
+    params: { id: sponsor.id },
+    props: { sponsor },
+  }));
+}
+const { sponsor } = Astro.props;
+import BaseLayout from "../../layouts/Base.astro";
+---
+
+<BaseLayout title={sponsor.name}>
+  <h1>{sponsor.name}</h1>
+  <Image
+    src={sponsor.image}
+    width="320"
+    height="240"
+    loading="lazy"
+    alt={sponsor.name}
+  />
+  <p>{sponsor.description}</p>
+</BaseLayout>
+
+<style>
+  img {
+    object-fit: contain;
+  }
+</style>
