@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+
+const staff = await getEntry("staff", "data");
+---
+
+<div class="container">
+  {
+    staff.data.map((staff) => (
+      <div class="row">
+        <div class="staff">
+          <div>
+            <Image
+              src={staff.icon}
+              width="320"
+              height="240"
+              loading="lazy"
+              alt={`${staff.name}'s icon`}
+            />
+            <h4>{staff.name}</h4>
+            {staff.organizationName}
+            <div>
+              {staff.twitterLink && (
+                <a href={staff.twitterLink} target="_blank">
+                  twitter
+                </a>
+              )}
+            </div>
+            <div>
+              {staff.githubLink && (
+                <a href={staff.githubLink} target="_blank">
+                  github
+                </a>
+              )}
+            </div>
+            <div>
+              {staff.otherLink && (
+                <a href={staff.otherLink} target="_blank">
+                  otherLink
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .container {
+    margin-top: 2rem;
+  }
+  .staff a {
+    display: block;
+  }
+  .staff img {
+    object-fit: contain;
+  }
+</style>
