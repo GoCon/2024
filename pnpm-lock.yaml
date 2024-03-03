@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.4.1
     version: 0.4.1(prettier-plugin-astro@0.12.3)(prettier@3.2.4)(typescript@5.3.3)
+  '@fontsource/poppins':
+    specifier: ^5.0.8
+    version: 5.0.8
   astro:
     specifier: ^4.2.3
     version: 4.2.3(typescript@5.3.3)
@@ -595,6 +598,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/poppins@5.0.8:
+    resolution: {integrity: sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}

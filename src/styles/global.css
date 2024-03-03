@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.369rem;
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.728rem;
+  }
+}
