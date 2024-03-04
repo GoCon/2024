@@ -2,10 +2,10 @@
   {
     "id": 0,
     "name": "Go Conference 2024 staff",
-    "icon": "https://placehold.jp/640x360.png",
+    "thumbnail": "https://placehold.jp/640x360.png",
     "organizationName": "Gophers Japan",
-    "twitterLink": "https://x.com/goconjp",
-    "githubLink": "https://github.com/GoCon",
+    "twitterId": "goconjp",
+    "githubId": "GoCon",
     "otherLink": "https://gocon.jp/"
   }
 ]
