@@ -19,7 +19,7 @@ const staffCollection = defineCollection({
     z.object({
       id: z.number(),
       name: z.string(),
-      icon: z.string(),
+     thumbnail: z.string().url(),
       organizationName: z.string(),
       twitterLink: z.string(),
       githubLink: z.string(),
