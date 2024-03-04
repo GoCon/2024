@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+---
+
+<footer class="footer-container">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h3>About</h3>
+      <a href="https://go.dev/conduct">Code of Conduct</a>
+      <a href="mailto:info@gocon.jp">INFO@GOCON.JP</a>
+      <a
+        href="https://drive.google.com/file/d/1Xon1uyLT-810sxnkLMngmL67z68K3XJG/view"
+        >特定商取引法に基づく表記</a
+      >
+    </div>
+    <div class="footer-past-conferences">
+      <h3>Past Conferences</h3>
+      <a href="/2022/spring">2022 Spring</a>
+      <a href="/2021/autumn">2021 Autumn</a>
+      <a href="/2021/spring">2021 Spring</a>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="https://twitter.com/hashtag/GOCON">#GOCON</a>
+      </div>
+      <div class="footer-credits">
+        <p>
+          The Go gopher was designed by <a
+            href="http://reneefrench.blogspot.com/">Renée French</a
+          >.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-content a {
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .footer-about a,
+  .footer-past-conferences a {
+    display: block;
+  }
+
+  @media (max-width: 800px) {
+    .footer-content {
+      width: auto;
+      padding: 0 20px;
+    }
+
+    .footer-about,
+    .footer-past-conferences,
+    .footer-bottom {
+      flex-basis: 100%;
+      margin-right: 0;
+    }
+
+    .footer-past-conference,
+    .footer-bottom {
+      margin-top: 10px;
+    }
+  }
+</style>
