@@ -23,7 +23,7 @@ const staffCollection = defineCollection({
       organizationName: z.string(),
       twitterLink: z.string(),
       githubLink: z.string(),
-      otherLink: z.string(),
+      otherLink: z.string().url(),
     }),
   ),
 });
