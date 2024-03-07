@@ -6,7 +6,7 @@ import Hamburger from "./hamburger.astro";
 <header class="container">
   <div class="wrapper">
     <h1>
-      <a href="/"
+      <a href={import.meta.env.BASE_URL}
         ><Image
           src=`${import.meta.env.BASE_URL}/goconference.svg`
           alt="Go Conference"
@@ -19,7 +19,7 @@ import Hamburger from "./hamburger.astro";
   </div>
   <nav id="navigation" class="collapsed">
     <ul>
-      <li><a href="/">Home</a></li>
+      <li><a href={import.meta.env.BASE_URL}>Home</a></li>
       <!-- ページの準備ができ次第コメントアウトを外す -->
       <!-- <li><a href="#">Sessions</a></li>
       <li><a href="#">Timetable</a></li>
