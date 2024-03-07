@@ -1,11 +1,9 @@
 import { defineConfig } from "astro/config";
 
-const base = import.meta.env.BASE_URL === "/" ? "/" : "/2024";
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://gocon.github.io",
-  base: base,
+  base: "/2024",
   i18n: {
     defaultLocale: "ja",
     locales: ["ja"],
