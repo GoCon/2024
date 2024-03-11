@@ -126,4 +126,21 @@ import BaseLayout from "../layouts/Base.astro";
     padding: 20px;
     box-sizing: border-box; /* パディングを幅に含める */
   }
+
+  a {
+    word-break: break-all;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .conference-announcement,
+    .conference-cfp,
+    .conference-sponsors {
+      width: auto;
+      padding: 0 20px;
+    }
+  }
 </style>
