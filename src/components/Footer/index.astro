@@ -2,110 +2,125 @@
 import { Image } from "astro:assets";
 ---
 
-<footer class="footer-container">
-  <div class="footer-content">
-    <div class="footer-about">
+<footer class="container">
+  <div class="content">
+    <div class="box">
       <h3>About</h3>
-      <a href="mailto:info@gocon.jp"
-        ><Image
-          src=`${import.meta.env.BASE_URL}/ic_mail.svg`
-          alt="mail"
-          width="18"
-          height="18"
-        /> info@gocon.jp</a
-      >
-      <a href="https://twitter.com/hashtag/gocon"
-        ><Image
-          src=`${import.meta.env.BASE_URL}/ic_twitter.svg`
-          alt="X/Twitter"
-          width="18"
-          height="18"
-        /> #gocon</a
-      >
-      <a href="https://go.dev/conduct">Code of Conduct</a>
-      <a
-        href="https://drive.google.com/file/d/1Xon1uyLT-810sxnkLMngmL67z68K3XJG/view"
-        >特定商取引法に基づく表記</a
-      >
+      <ul>
+        <li>
+          <a href="mailto:info@gocon.jp"
+            ><Image
+              src=`${import.meta.env.BASE_URL}/ic_mail.svg`
+              alt="mail"
+              width="18"
+              height="18"
+            />info@gocon.jp</a
+          >
+        </li>
+        <li><a href="https://go.dev/conduct">Code of Conduct</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1Xon1uyLT-810sxnkLMngmL67z68K3XJG/view"
+            >特定商取引法に基づく表記</a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="footer-past-conferences">
+    <div class="box">
       <h3>Past Conferences</h3>
-      <a href="https://gocon.jp/2023">2023</a>
-      <a href="https://gocon.jp/2022spring">2022 Spring</a>
-      <a href="https://gocon.jp/2021autumn">2021 Autumn</a>
+      <ul>
+        <li><a href="https://gocon.jp/2023">2023</a></li>
+        <li><a href="https://gocon.jp/2022spring">2022 Spring</a></li>
+        <li><a href="https://gocon.jp/2021autumn">2021 Autumn</a></li>
+      </ul>
     </div>
-    <br />
-    <div class="footer-bottom">
-      <div class="footer-credits">
-        <p>
-          The Go gopher was designed by <a
-            href="http://reneefrench.blogspot.com/">Renée French</a
-          >.
-        </p>
-      </div>
+  </div>
+  <hr />
+  <div class="bottom">
+    <a href="https://twitter.com/hashtag/gocon">
+      <Image
+        src=`${import.meta.env.BASE_URL}/ic_x.svg`
+        width={18}
+        height={18}
+        alt="X/Twitter"
+      /> #gocon
+    </a>
+    <div class="credit">
+      <p>Go Conference</p>
+      <small>
+        The Go gopher was designed by <a href="http://reneefrench.blogspot.com/"
+          >Renée French</a
+        >.
+      </small>
     </div>
   </div>
 </footer>
 
 <style>
-  .footer-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+  .container {
     background-color: #f5f5f5;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
+    color: #222;
   }
 
-  .footer-content {
-    max-width: 768px;
+  .content {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    padding: 16px 32px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  .box {
+    display: flex;
+    width: calc(100% / 2);
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .box ul {
+    list-style: none;
+  }
+
+  .box ul > *:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    gap: 1ch;
+  }
+
+  hr {
+    border-top: 1px solid #ddd;
+  }
+
+  .bottom {
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-  }
+    padding: 16px 32px;
 
-  .footer-past-conferences {
-    margin-left: auto;
-  }
-
-  .footer-content a {
-    color: #333;
-    margin-bottom: 5px;
-  }
-
-  .footer-about a,
-  .footer-past-conferences a {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .footer-bottom {
-    flex-basis: 100%;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  @media (max-width: 768px) {
-    .footer-content {
-      width: auto;
-      padding: 0 20px;
-    }
-
-    .footer-about,
-    .footer-past-conferences,
-    .footer-bottom {
-      flex-basis: 100%;
-      margin-right: 0;
-    }
-
-    .footer-bottom {
-      text-align: left;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 8px;
     }
   }
 
-  img {
-    vertical-align: middle;
+  .credit {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #666;
   }
 </style>
