@@ -6,8 +6,9 @@ import { Image } from "astro:assets";
   <div class="footer-content">
     <div class="footer-about">
       <h3>About</h3>
+      <a href="mailto:info@gocon.jp">info@gocon.jp</a>
+      <a href="https://twitter.com/hashtag/gocon">#gocon</a>
       <a href="https://go.dev/conduct">Code of Conduct</a>
-      <a href="mailto:info@gocon.jp">INFO@GOCON.JP</a>
       <a
         href="https://drive.google.com/file/d/1Xon1uyLT-810sxnkLMngmL67z68K3XJG/view"
         >特定商取引法に基づく表記</a
@@ -19,10 +20,8 @@ import { Image } from "astro:assets";
       <a href="https://gocon.jp/2022spring">2022 Spring</a>
       <a href="https://gocon.jp/2021autumn">2021 Autumn</a>
     </div>
+    <br />
     <div class="footer-bottom">
-      <div class="footer-social">
-        <a href="https://twitter.com/hashtag/GOCON">#GOCON</a>
-      </div>
       <div class="footer-credits">
         <p>
           The Go gopher was designed by <a
@@ -45,11 +44,15 @@ import { Image } from "astro:assets";
   }
 
   .footer-content {
-    max-width: 800px;
+    max-width: 768px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .footer-past-conferences {
+    margin-left: auto;
   }
 
   .footer-content a {
@@ -60,6 +63,14 @@ import { Image } from "astro:assets";
   .footer-about a,
   .footer-past-conferences a {
     display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .footer-bottom {
+    flex-basis: 100%;
+    margin-top: 20px;
+    text-align: center;
   }
 
   @media (max-width: 768px) {
@@ -75,9 +86,8 @@ import { Image } from "astro:assets";
       margin-right: 0;
     }
 
-    .footer-past-conference,
     .footer-bottom {
-      margin-top: 10px;
+      text-align: left;
     }
   }
 </style>
