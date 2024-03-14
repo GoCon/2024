@@ -1,14 +1,18 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
-import DesktopKV from "../assets/kv_desktop.svg";
-import MobileKV from "../assets/kv_mobile.svg";
 ---
 
 <BaseLayout title="Home">
   <div class="key-visual">
     <picture>
-      <source media="(max-width: 600px)" srcset={MobileKV.src} />
-      <img src={DesktopKV.src} alt="キービジュアル" />
+      <source
+        media="(max-width: 600px)"
+        srcset={`${import.meta.env.BASE_URL}/kv_mobile.svg`}
+      />
+      <img
+        src={`${import.meta.env.BASE_URL}/kv_desktop.svg`}
+        alt="キービジュアル"
+      />
     </picture>
   </div>
   <div class="box">
