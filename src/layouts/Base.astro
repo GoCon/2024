@@ -36,7 +36,13 @@ const description =
     <meta property="og:url" content={Astro.url} />
     <meta property="og:title" content={siteName} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL("og_image_lg.png", Astro.url)} />
+    <meta
+      property="og:image"
+      content={new URL(
+        `${import.meta.env.BASE_URL}/og_image_lg.png`,
+        Astro.url,
+      )}
+    />
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:url" content={Astro.url} />
@@ -44,7 +50,10 @@ const description =
     <meta property="twitter:description" content={description} />
     <meta
       property="twitter:image"
-      content={new URL("og_image_md.png", Astro.url)}
+      content={new URL(
+        `${import.meta.env.BASE_URL}/og_image_md.png`,
+        Astro.url,
+      )}
     />
   </head>
   <body>
