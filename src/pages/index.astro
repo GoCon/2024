@@ -1,9 +1,16 @@
 ---
-import Sponsors from "../components/Sponsors.astro";
 import BaseLayout from "../layouts/Base.astro";
+import DesktopKV from "../assets/kv_desktop.svg";
+import MobileKV from "../assets/kv_mobile.svg";
 ---
 
 <BaseLayout title="Home">
+  <div class="key-visual">
+    <picture>
+      <source media="(max-width: 600px)" srcset={MobileKV.src} />
+      <img src={DesktopKV.src} alt="キービジュアル" />
+    </picture>
+  </div>
   <div class="conference-announcement">
     <h1>Go Conference 2024 開催概要</h1>
     Go Conference 2024 を以下の通り開催します。<br />
@@ -80,6 +87,18 @@ import BaseLayout from "../layouts/Base.astro";
 </BaseLayout>
 
 <style>
+  * {
+    color: #222;
+  }
+  .key-visual {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .key-visual img {
+    width: 100%;
+    height: auto;
+  }
   .conference-announcement {
     color: black; /* テキスト色 */
     width: 80%;
