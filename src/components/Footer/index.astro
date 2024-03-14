@@ -63,14 +63,15 @@ import { Image } from "astro:assets";
   }
 
   .content {
-    max-width: 1024px;
+    max-width: 1920px;
     margin: 0 auto;
     display: flex;
-    padding: 16px 32px;
+    padding: 32px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 24px;
+      padding: 16px;
     }
   }
 
@@ -105,7 +106,7 @@ import { Image } from "astro:assets";
   }
 
   .bottom {
-    max-width: 1024px;
+    max-width: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -114,6 +115,7 @@ import { Image } from "astro:assets";
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 8px;
+      padding: 16px;
     }
   }
 
