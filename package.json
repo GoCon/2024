@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}' --plugin=prettier-plugin-astro",
+    "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}'",
     "prepare": "husky install"
   },
   "engines": {
