@@ -3,37 +3,44 @@ import { Image } from "astro:assets";
 import Hamburger from "./hamburger.astro";
 ---
 
-<header class="container">
-  <div class="wrapper">
-    <h1>
-      <a href={import.meta.env.BASE_URL}
-        ><Image
-          src=`${import.meta.env.BASE_URL}/goconference.svg`
-          alt="Go Conference"
-          width="234"
-          height="40"
-        /></a
-      >
-    </h1>
-    <Hamburger id="toggle" />
-  </div>
-  <nav id="navigation" class="collapsed">
-    <ul>
-      <li><a href={import.meta.env.BASE_URL}>Home</a></li>
-      <!-- ページの準備ができ次第コメントアウトを外す -->
-      <!-- <li><a href="#">Sessions</a></li>
+<header>
+  <div class="container">
+    <div class="wrapper">
+      <h1>
+        <a href={import.meta.env.BASE_URL}
+          ><Image
+            src=`${import.meta.env.BASE_URL}/goconference.svg`
+            alt="Go Conference"
+            width="234"
+            height="40"
+          /></a
+        >
+      </h1>
+      <Hamburger id="toggle" />
+    </div>
+    <nav id="navigation" class="collapsed">
+      <ul>
+        <li><a href={import.meta.env.BASE_URL}>Home</a></li>
+        <!-- ページの準備ができ次第コメントアウトを外す -->
+        <!-- <li><a href="#">Sessions</a></li>
       <li><a href="#">Timetable</a></li>
       <li><a href="#">Floor Guide</a></li>
       <li><a href="#">Staff</a></li>
       <li><a href="#">English</a></li> -->
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <style>
+  header {
+    background-color: #ebf5fa;
+  }
   .container {
-    padding: 16px;
-    background-color: #e1e1e1;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 8px;
+    padding-inline: 16px;
 
     display: flex;
     flex-wrap: wrap;
