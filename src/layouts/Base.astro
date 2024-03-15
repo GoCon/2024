@@ -1,9 +1,9 @@
 ---
-import { siteName } from "../domain/constants";
-import { getLangFromUrl } from "../i18n/utils";
-import Header from "../components/Header/index.astro";
-import Footer from "../components/Footer/index.astro";
-import "../styles/global.css";
+import { SITE_NAME } from "@domain/constants";
+import { getLangFromUrl } from "@i18n/utils";
+import Header from "@components/Header/index.astro";
+import Footer from "@components/Footer/index.astro";
+import "@styles/global.css";
 
 interface Props {
   title?: string;
@@ -25,16 +25,16 @@ const description =
     />
     <meta name="viewport" content="width=device-width" />
     <slot name="title">
-      <title>{title ? `${title} | ${siteName}` : siteName}</title>
+      <title>{title ? `${title} | ${SITE_NAME}` : SITE_NAME}</title>
     </slot>
 
-    <meta name="title" content={siteName} />
+    <meta name="title" content={SITE_NAME} />
     <meta name="description" content={description} />
 
-    <meta property="og:site_name" content={siteName} />
+    <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={siteName} />
+    <meta property="og:title" content={SITE_NAME} />
     <meta property="og:description" content={description} />
     <meta
       property="og:image"
@@ -46,7 +46,7 @@ const description =
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={siteName} />
+    <meta property="twitter:title" content={SITE_NAME} />
     <meta property="twitter:description" content={description} />
     <meta
       property="twitter:image"
