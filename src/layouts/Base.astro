@@ -1,5 +1,5 @@
 ---
-import { SITE_NAME } from "@domain/constants";
+import { SITE_DESCRIPTION, SITE_NAME } from "@domain/constants";
 import { getLangFromUrl } from "@i18n/utils";
 import Header from "@components/Header/index.astro";
 import Footer from "@components/Footer/index.astro";
@@ -7,12 +7,14 @@ import "@styles/global.css";
 
 interface Props {
   title?: string;
+  description?: string;
 }
 
 const lang = getLangFromUrl(Astro.url);
-const { title } = Astro.props;
-const description =
-  "Go Conference is a conference for Go programming language users.";
+const { title, description } = Astro.props;
+
+const _title = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+const _description = description || SITE_DESCRIPTION;
 ---
 
 <html lang={lang}>
@@ -25,17 +27,17 @@ const description =
     />
     <meta name="viewport" content="width=device-width" />
     <slot name="title">
-      <title>{title ? `${title} | ${SITE_NAME}` : SITE_NAME}</title>
+      <title>{_title}</title>
     </slot>
 
-    <meta name="title" content={SITE_NAME} />
-    <meta name="description" content={description} />
+    <meta name="title" content={_title} />
+    <meta name="description" content={_description} />
 
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
-    <meta property="og:title" content={SITE_NAME} />
-    <meta property="og:description" content={description} />
+    <meta property="og:title" content={_title} />
+    <meta property="og:description" content={_description} />
     <meta
       property="og:image"
       content={new URL(
@@ -46,8 +48,8 @@ const description =
 
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={SITE_NAME} />
-    <meta property="twitter:description" content={description} />
+    <meta property="twitter:title" content={_title} />
+    <meta property="twitter:description" content={_description} />
     <meta
       property="twitter:image"
       content={new URL(
