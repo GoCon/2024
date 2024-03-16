@@ -4,6 +4,7 @@ import { getLangFromUrl } from "../i18n/utils";
 import Header from "../components/Header/index.astro";
 import Footer from "../components/Footer/index.astro";
 import "../styles/global.css";
+import { makePath } from "../utils/makePath";
 
 interface Props {
   title?: string;
@@ -18,11 +19,7 @@ const description =
 <html lang={lang}>
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href=`${import.meta.env.BASE_URL}/favicon.svg`
-    />
+    <link rel="icon" type="image/svg+xml" href={makePath("/favicon.svg")} />
     <meta name="viewport" content="width=device-width" />
     <slot name="title">
       <title>{title ? `${title} | ${siteName}` : siteName}</title>
@@ -38,10 +35,7 @@ const description =
     <meta property="og:description" content={description} />
     <meta
       property="og:image"
-      content={new URL(
-        `${import.meta.env.BASE_URL}/og_image_lg.png`,
-        Astro.url,
-      )}
+      content={new URL(makePath("og_image_lg.png"), Astro.url)}
     />
 
     <meta property="twitter:card" content="summary" />
@@ -50,10 +44,7 @@ const description =
     <meta property="twitter:description" content={description} />
     <meta
       property="twitter:image"
-      content={new URL(
-        `${import.meta.env.BASE_URL}/og_image_md.png`,
-        Astro.url,
-      )}
+      content={new URL(makePath("og_image_md.png"), Astro.url)}
     />
   </head>
   <body>
