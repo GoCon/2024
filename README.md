@@ -1,23 +1,28 @@
-# 2024
-Go Conference 2024
+# Go Conference 2024 Website
 
 ## Getting Started
 
 **Prerequisites**
 
-- [Node.js](https://nodejs.org/en/download/) version 20.x higher
-- [pnpm](https://pnpm.io/installation) version 8.x higher
+- [Node.js](https://nodejs.org/en/download/): v20.x or higher
+- [pnpm](https://pnpm.io/installation): v8.x or higher (use [corepack](https://github.com/nodejs/corepack))
 
-1. Install dependencies.
+1. Enable corepack.
 
-```shell
-pnpm install
-```
+    ```shell
+    corepack enable
+    ```
 
-2. Start the development server.
+2. Install dependencies.
 
-```shell
-pnpm start
-```
+    ```shell
+    pnpm install
+    ```
+
+3. Start the development server.
+
+    ```shell
+    pnpm run dev
+    ```
 
 3. Open `http://localhost:4321` in your browser.
