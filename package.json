@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}'",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "vitest"
   },
   "engines": {
     "node": ">=20"
@@ -29,6 +30,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.12.3"
+    "prettier-plugin-astro": "^0.12.3",
+    "vitest": "^1.4.0"
   }
 }

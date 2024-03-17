@@ -1,15 +1,16 @@
 ---
 import { Image } from "astro:assets";
 import Hamburger from "@components/Header/hamburger.astro";
+import { concatWithBase } from "../../utils/concatWithBase";
 ---
 
 <header>
   <div class="container">
     <div class="wrapper">
       <h1>
-        <a href={import.meta.env.BASE_URL}
+        <a href={concatWithBase()}
           ><Image
-            src=`${import.meta.env.BASE_URL}/goconference.svg`
+            src={concatWithBase("goconference.svg")}
             alt="Go Conference"
             width="234"
             height="40"
@@ -20,7 +21,7 @@ import Hamburger from "@components/Header/hamburger.astro";
     </div>
     <nav id="navigation" class="collapsed">
       <ul>
-        <li><a href={import.meta.env.BASE_URL}>Home</a></li>
+        <li><a href={concatWithBase()}>Home</a></li>
         <!-- ページの準備ができ次第コメントアウトを外す -->
         <!-- <li><a href="#">Sessions</a></li>
       <li><a href="#">Timetable</a></li>
