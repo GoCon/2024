@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
+import { concatWithBase } from "../utils/concatWithBase";
 ---
 
 <BaseLayout title="Home">
@@ -7,12 +8,9 @@ import BaseLayout from "../layouts/Base.astro";
     <picture>
       <source
         media="(max-width: 600px)"
-        srcset={`${import.meta.env.BASE_URL}/kv_mobile.svg`}
+        srcset={concatWithBase("kv_mobile.svg")}
       />
-      <img
-        src={`${import.meta.env.BASE_URL}/kv_desktop.svg`}
-        alt="キービジュアル"
-      />
+      <img src={concatWithBase("kv_desktop.svg")} alt="キービジュアル" />
     </picture>
   </div>
   <div class="box">
