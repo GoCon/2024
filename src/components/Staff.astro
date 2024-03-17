@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+import ic_twitter from "../assets/icons/ic_twitter.svg";
+import ic_github from "../assets/icons/ic_github.svg";
+import ic_link from "../assets/icons/ic_link.svg";
+
+const staff = await getEntry("staff", "data");
+---
+
+<div class="container">
+  {
+    staff.data.map((staff) => (
+      <div class="row">
+        <div class="staff">
+          <div>
+            <Image
+              src={staff.thumbnail}
+              width="320"
+              height="240"
+              loading="lazy"
+              alt={`${staff.name}'s icon`}
+            />
+            <h4>{staff.name}</h4>
+            {staff.organizationName}
+            <div>
+              {staff.twitterId && (
+                <a
+                  href={`https://twitter.com/${staff.twitterId}`}
+                  target="_blank"
+                >
+                  <Image src={ic_twitter} alt="twitter" />
+                </a>
+              )}
+            </div>
+            <div>
+              {staff.githubId && (
+                <a
+                  href={`https://github.com/${staff.githubId}`}
+                  target="_blank"
+                >
+                  <Image src={ic_github} alt="github" />
+                </a>
+              )}
+            </div>
+            <div>
+              {staff.otherLink && (
+                <a href={staff.otherLink} target="_blank">
+                  <Image src={ic_link} alt="otherLink" />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .container {
+    margin-top: 2rem;
+  }
+  .staff a {
+    display: block;
+  }
+  .staff img {
+    object-fit: contain;
+  }
+</style>

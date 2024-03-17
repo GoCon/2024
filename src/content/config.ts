@@ -12,6 +12,23 @@ const sponsorsCollection = defineCollection({
     }),
   ),
 });
+
+const staffCollection = defineCollection({
+  type: "data",
+  schema: z.array(
+    z.object({
+      id: z.number(),
+      name: z.string(),
+      thumbnail: z.string().url(),
+      organizationName: z.string(),
+      twitterId: z.string(),
+      githubId: z.string(),
+      otherLink: z.string().url(),
+    }),
+  ),
+});
+
 export const collections = {
   sponsors: sponsorsCollection,
+  staff: staffCollection,
 };
