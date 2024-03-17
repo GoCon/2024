@@ -1,13 +1,16 @@
 ---
 import BaseLayout from "../layouts/Base.astro";
-import { makePath } from "../utils/makePath";
+import { concatWithBase } from "../utils/concatWithBase";
 ---
 
 <BaseLayout title="Home">
   <div class="key-visual">
     <picture>
-      <source media="(max-width: 600px)" srcset={makePath("kv_mobile.svg")} />
-      <img src={makePath("kv_desktop.svg")} alt="キービジュアル" />
+      <source
+        media="(max-width: 600px)"
+        srcset={concatWithBase("kv_mobile.svg")}
+      />
+      <img src={concatWithBase("kv_desktop.svg")} alt="キービジュアル" />
     </picture>
   </div>
   <div class="box">

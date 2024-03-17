@@ -1,16 +1,16 @@
 ---
 import { Image } from "astro:assets";
 import Hamburger from "./hamburger.astro";
-import { makePath } from "../../utils/makePath";
+import { concatWithBase } from "../../utils/concatWithBase";
 ---
 
 <header>
   <div class="container">
     <div class="wrapper">
       <h1>
-        <a href={makePath()}
+        <a href={concatWithBase()}
           ><Image
-            src={makePath("goconference.svg")}
+            src={concatWithBase("goconference.svg")}
             alt="Go Conference"
             width="234"
             height="40"
@@ -21,7 +21,7 @@ import { makePath } from "../../utils/makePath";
     </div>
     <nav id="navigation" class="collapsed">
       <ul>
-        <li><a href={makePath()}>Home</a></li>
+        <li><a href={concatWithBase()}>Home</a></li>
         <!-- ページの準備ができ次第コメントアウトを外す -->
         <!-- <li><a href="#">Sessions</a></li>
       <li><a href="#">Timetable</a></li>
