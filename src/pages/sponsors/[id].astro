@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
+import BaseLayout from "@layouts/Base.astro";
+
 export async function getStaticPaths() {
   const sponsors = await getEntry("sponsors", "data");
   return sponsors.data.map((sponsor) => ({
@@ -8,8 +10,8 @@ export async function getStaticPaths() {
     props: { sponsor },
   }));
 }
+
 const { sponsor } = Astro.props;
-import BaseLayout from "../../layouts/Base.astro";
 ---
 
 <BaseLayout title={sponsor.name}>
