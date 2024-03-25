@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 import BaseLayout from "@layouts/Base.astro";
+import { concatWithBase } from "@utils/concatWithBase";
 
 export async function getStaticPaths() {
   const sponsors = await getEntry("sponsors", "data");
@@ -17,7 +18,7 @@ const { sponsor } = Astro.props;
 <BaseLayout title={sponsor.name}>
   <h1>{sponsor.name}</h1>
   <Image
-    src={sponsor.image}
+    src={concatWithBase(sponsor.image)}
     width="320"
     height="240"
     loading="lazy"
