@@ -1,163 +1,156 @@
 [
   {
     "id": 1,
-    "name": "株式会社リブセンス",
+    "name": "転職ドラフト",
     "class": "Platinum Gold",
     "description": "",
-    "image": "sponsors/1_株式会社リブセンス.png"
+    "image": "sponsors/1_転職ドラフト.png"
   },
   {
     "id": 3,
     "name": "ミイダス株式会社",
     "class": "Gold",
     "description": "",
-    "image": "sponsors/1_ミイダス株式会社.png"
+    "image": "sponsors/3_ミイダス株式会社.png"
   },
   {
     "id": 5,
     "name": "株式会社カウシェ",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/1_株式会社カウシェ.png"
+    "image": "sponsors/5_株式会社カウシェ.png"
   },
   {
     "id": 6,
     "name": "株式会社メルカリ",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/2_株式会社メルカリ.png"
+    "image": "sponsors/6_株式会社メルカリ.png"
   },
   {
     "id": 11,
     "name": "フラー株式会社",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/7_フラー株式会社.jpg"
+    "image": "sponsors/11_フラー株式会社.jpg"
   },
   {
     "id": 13,
     "name": "株式会社Resilire",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/9_株式会社Resilire.svg"
+    "image": "sponsors/13_株式会社Resilire.svg"
   },
   {
     "id": 14,
     "name": "newmo株式会社",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/10_newmo株式会社.png"
+    "image": "sponsors/14_newmo株式会社.png"
   },
   {
     "id": 22,
     "name": "株式会社enechain",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/6_株式会社enechain.svg"
+    "image": "sponsors/22_株式会社enechain.svg"
   },
   {
     "id": 24,
     "name": "テイラー株式会社",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/8_テイラー株式会社.svg"
+    "image": "sponsors/24_テイラー株式会社.svg"
   },
   {
     "id": 25,
     "name": "株式会社TVer",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/9_株式会社TVer.png"
+    "image": "sponsors/25_株式会社TVer.png"
   },
   {
     "id": 26,
     "name": "株式会社ミラティブ",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/10_株式会社ミラティブ.png"
+    "image": "sponsors/26_株式会社ミラティブ.png"
   },
   {
     "id": 27,
     "name": "ウォンテッドリー株式会社",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/11_ウォンテッドリー株式会社.png"
+    "image": "sponsors/27_ウォンテッドリー株式会社.png"
   },
   {
     "id": 31,
     "name": "株式会社AMDlab",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/15_株式会社AMDlab.jpg"
+    "image": "sponsors/31_株式会社AMDlab.jpg"
   },
   {
     "id": 32,
     "name": "株式会社mikan",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/16_株式会社mikan.png"
+    "image": "sponsors/32_株式会社mikan.png"
   },
   {
     "id": 33,
     "name": "株式会社ヤプリ",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/17_株式会社ヤプリ.png"
+    "image": "sponsors/33_株式会社ヤプリ.png"
   },
   {
     "id": 34,
     "name": "株式会社tacoms",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/18_株式会社tacoms.svg"
+    "image": "sponsors/34_株式会社tacoms.svg"
   },
   {
     "id": 35,
     "name": "STORES 株式会社",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/19_STORES 株式会社.png"
-  },
-  {
-    "id": 36,
-    "name": "株式会社ナレッジワーク",
-    "class": "Bronze",
-    "description": "",
-    "image": "sponsors/20_株式会社ナレッジワーク.jpg"
+    "image": "sponsors/35_STORES 株式会社.png"
   },
   {
     "id": 38,
     "name": "株式会社U-NEXT",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/22_株式会社U-NEXT.png"
+    "image": "sponsors/38_株式会社U-NEXT.png"
   },
   {
     "id": 39,
     "name": "株式会社アンドパッド",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/23_株式会社アンドパッド.png"
+    "image": "sponsors/39_株式会社アンドパッド.png"
   },
   {
     "id": 42,
     "name": "株式会社メドレー",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/26_株式会社メドレー.png"
+    "image": "sponsors/42_株式会社メドレー.png"
   },
   {
     "id": 43,
     "name": "株式会社LayerX",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/27_株式会社LayerX.png"
+    "image": "sponsors/43_株式会社LayerX.png"
   },
   {
     "id": 44,
     "name": "and factory株式会社",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/28_and factory株式会社.png"
+    "image": "sponsors/44_and factory株式会社.png"
   }
 ]
