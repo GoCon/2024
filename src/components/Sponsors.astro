@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
+import { concatWithBase } from "@utils/concatWithBase";
 
 const sponsors = await getEntry("sponsors", "data");
 ---
@@ -11,16 +12,26 @@ const sponsors = await getEntry("sponsors", "data");
     sponsors.data.map((sponsor) => (
       <div class="row">
         <div class="sponsor">
-          <a href={`/sponsors/${sponsor.id}`}>
+          {sponsor.class === "Platinum Gold" || sponsor.class === "Gold" ? (
+            <a href={concatWithBase(`sponsors/${sponsor.id}`)}>
+              <Image
+                src={concatWithBase(sponsor.image)}
+                width="320"
+                height="240"
+                loading="lazy"
+                alt={sponsor.name}
+              />
+            </a>
+          ) : (
             <Image
-              src={sponsor.image}
+              src={concatWithBase(sponsor.image)}
               width="320"
               height="240"
               loading="lazy"
               alt={sponsor.name}
             />
-          </a>
-          {sponsor.name}
+          )}
+          {sponsor.name} ({sponsor.class})
         </div>
       </div>
     ))
