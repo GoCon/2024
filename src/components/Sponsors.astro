@@ -18,90 +18,104 @@ const bronzeSponsors = sponsors.data.filter(
 );
 ---
 
-<div class="container">
-  <h2>Sponsors</h2>
-  <h3>Platinum "Go"ld</h3>
-  <div class="box">
-    {
-      platinumGoldSponsors.map((sponsor) => (
-        <Image
-          class="platinum"
-          src={concatWithBase(sponsor.image)}
-          alt={sponsor.name}
-          width={448}
-          height={242}
-        />
-      ))
-    }
-  </div>
-  <h3>Gold</h3>
-  <div class="box">
-    {
-      goldSponsors.map((sponsor) => (
-        <Image
-          class="gold"
-          src={concatWithBase(sponsor.image)}
-          alt={sponsor.name}
-          width={448}
-          height={242}
-        />
-      ))
-    }
-  </div>
-  <h3>Silver</h3>
-  <div class="box">
-    {
-      silverSponsors.map((sponsor) => (
-        <Image
-          class="silver"
-          src={concatWithBase(sponsor.image)}
-          alt={sponsor.name}
-          width={290}
-          height={163}
-          alt={sponsor.name}
-        />
-      ))
-    }
-  </div>
-  <h3>Bronze</h3>
-  <div class="box">
-    {
-      bronzeSponsors.map((sponsor) => (
-        <Image
-          class="bronze"
-          src={concatWithBase(sponsor.image)}
-          alt={sponsor.name}
-          width={164}
-          height={92}
-          alt={sponsor.name}
-        />
-      ))
-    }
+<div class="background">
+  <div class="container">
+    <h2>Sponsors</h2>
+    <h3>Platinum "Go"ld</h3>
+    <div class="box">
+      {
+        platinumGoldSponsors.map((sponsor) => (
+          <Image
+            class="platinum"
+            src={concatWithBase(sponsor.image)}
+            alt={sponsor.name}
+            width={448}
+            height={242}
+          />
+        ))
+      }
+    </div>
+    <h3>Gold</h3>
+    <div class="box">
+      {
+        goldSponsors.map((sponsor) => (
+          <Image
+            class="gold"
+            src={concatWithBase(sponsor.image)}
+            alt={sponsor.name}
+            width={448}
+            height={242}
+          />
+        ))
+      }
+    </div>
+    <h3>Silver</h3>
+    <div class="box">
+      {
+        silverSponsors.map((sponsor) => (
+          <Image
+            class="silver"
+            src={concatWithBase(sponsor.image)}
+            alt={sponsor.name}
+            width={290}
+            height={163}
+            alt={sponsor.name}
+          />
+        ))
+      }
+    </div>
+    <h3>Bronze</h3>
+    <div class="box">
+      {
+        bronzeSponsors.map((sponsor) => (
+          <Image
+            class="bronze"
+            src={concatWithBase(sponsor.image)}
+            alt={sponsor.name}
+            width={164}
+            height={92}
+            alt={sponsor.name}
+          />
+        ))
+      }
+    </div>
   </div>
 
   <style>
+    .background {
+      background-color: #f7f9fb;
+    }
     .container {
       max-width: 1920px;
       margin: 0 auto;
       margin-top: 2rem;
-      padding: 8px;
+      padding: 32px;
       padding-inline: 16px;
       text-align: center;
     }
 
     h2,
     h3 {
-      margin: 16px 0;
+      margin: 32px 0;
       @media screen and (max-width: 768px) {
-        margin: 8px 0;
+        margin: 16px 0;
       }
     }
 
     .box {
+      background-color: white;
+      border-radius: 20px;
+      margin-inline: auto;
+      max-width: 1024px;
+      padding: 40px;
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
       justify-content: center;
+
+      @media screen and (max-width: 448px) {
+        padding: 20px;
+      }
     }
 
     img {
