@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "@layouts/Base.astro";
+import Sponsors from "@components/Sponsors.astro";
+import { Image } from "astro:assets";
 import { concatWithBase } from "@utils/concatWithBase";
 ---
 
@@ -77,6 +79,7 @@ import { concatWithBase } from "@utils/concatWithBase";
       >からお願いいたします。
     </p>
   </div>
+  <Sponsors />
 </BaseLayout>
 
 <style>
