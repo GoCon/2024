@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "@layouts/Base.astro";
 import Sponsors from "@components/Sponsors.astro";
-import { Image } from "astro:assets";
 import { concatWithBase } from "@utils/concatWithBase";
 ---
 
@@ -59,25 +58,6 @@ import { concatWithBase } from "@utils/concatWithBase";
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-  </div>
-  <div class="box">
-    <h2>スポンサープラン</h2>
-    <p>
-      Go Conference をご支援いただける企業様をお待ちしております！<br />
-      ※プラチナGoルド / Goルド / シルバーは募集締め切りました
-    </p>
-    <iframe
-      src="https://drive.google.com/file/d/13SnUwbFRxCGhFglSxb-nfi-383QJe6bw/preview"
-      width="640"
-      height="380"
-      allow="autoplay"></iframe>
-    <p>
-      スポンサーのお申し込みは<a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfvGUmP1Nddq6SvcZxCw7JxrOApg1a8z1jKuo8V8THaRQ_7PQ/viewform"
-        target="_blank"
-        rel="noopener noreferrer">Googleフォーム</a
-      >からお願いいたします。
-    </p>
   </div>
   <Sponsors />
 </BaseLayout>
