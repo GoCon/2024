@@ -4,33 +4,33 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "prepare": "husky",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write '**/*.{astro,js,mjs,json,ts,yml,yaml}'",
-    "prepare": "husky install",
     "test": "vitest"
   },
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@8.15.5",
   "lint-staged": {
     "**/*.{astro,js,mjs,json,ts,yml,yaml}": "pnpm run format"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@fontsource/poppins": "^5.0.8",
-    "astro": "^4.2.3",
-    "sharp": "^0.33.2",
-    "typescript": "^5.3.3"
+    "@astrojs/check": "^0.5.10",
+    "@fontsource/poppins": "^5.0.12",
+    "astro": "4.4.0",
+    "sharp": "^0.33.3",
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.12.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
     "vitest": "^1.4.0"
   }
 }
