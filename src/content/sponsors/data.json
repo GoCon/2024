@@ -102,7 +102,7 @@
     "name": "MODE Inc.",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/MODE_Inc.png"
+    "image": "sponsors/MODE Inc.png"
   },
   {
     "id": 16,
@@ -113,10 +113,10 @@
   },
   {
     "id": 17,
-    "name": "株式会社UPSIDER",
+    "name": "株式会社 UPSIDER",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/株式会社UPSIDER.png"
+    "image": "sponsors/株式会社 UPSIDER.png"
   },
   {
     "id": 19,
@@ -145,6 +145,13 @@
     "class": "Bronze",
     "description": "",
     "image": "sponsors/株式会社enechain.svg"
+  },
+  {
+    "id": 23,
+    "name": "株式会社Hacobu",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社Hacobu.png"
   },
   {
     "id": 24,
