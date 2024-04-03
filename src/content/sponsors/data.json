@@ -7,18 +7,32 @@
     "image": "sponsors/転職ドラフト.png"
   },
   {
+    "id": 2,
+    "name": "株式会社エブリー",
+    "class": "Platinum Gold",
+    "description": "",
+    "image": "sponsors/株式会社エブリー.svg"
+  },
+  {
     "id": 3,
     "name": "ミイダス株式会社",
     "class": "Gold",
     "description": "",
-    "image": "sponsors/ミイダス株式会社.png"
+    "image": "sponsors/ミイダス株式会社.jpg"
+  },
+  {
+    "id": 4,
+    "name": "株式会社カミナシ",
+    "class": "Gold",
+    "description": "",
+    "image": "sponsors/株式会社カミナシ.png"
   },
   {
     "id": 5,
     "name": "株式会社カウシェ",
     "class": "Silver",
     "description": "",
-    "image": "sponsors/株式会社カウシェ.png"
+    "image": "sponsors/株式会社カウシェ.svg"
   },
   {
     "id": 6,
@@ -28,11 +42,46 @@
     "image": "sponsors/株式会社メルカリ.png"
   },
   {
+    "id": 7,
+    "name": "株式会社スリーシェイク",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/株式会社スリーシェイク.png"
+  },
+  {
+    "id": 8,
+    "name": "株式会社OPTiM",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/株式会社OPTiM.png"
+  },
+  {
+    "id": 9,
+    "name": "株式会社バニッシュ・スタンダード",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/株式会社バニッシュ・スタンダード.png"
+  },
+  {
+    "id": 10,
+    "name": "株式会社一休",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/株式会社一休.png"
+  },
+  {
     "id": 11,
     "name": "フラー株式会社",
     "class": "Silver",
     "description": "",
     "image": "sponsors/フラー株式会社.jpg"
+  },
+  {
+    "id": 12,
+    "name": "株式会社ビットキー",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/株式会社ビットキー.png"
   },
   {
     "id": 13,
@@ -47,6 +96,48 @@
     "class": "Silver",
     "description": "",
     "image": "sponsors/newmo株式会社.png"
+  },
+  {
+    "id": 15,
+    "name": "MODE Inc.",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/MODE_Inc.png"
+  },
+  {
+    "id": 16,
+    "name": "株式会社カオナビ",
+    "class": "Silver",
+    "description": "",
+    "image": "sponsors/株式会社カオナビ.png"
+  },
+  {
+    "id": 17,
+    "name": "株式会社UPSIDER",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社UPSIDER.png"
+  },
+  {
+    "id": 19,
+    "name": "コネヒト株式会社",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/コネヒト株式会社.png"
+  },
+  {
+    "id": 20,
+    "name": "株式会社カナリー",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社カナリー.png"
+  },
+  {
+    "id": 21,
+    "name": "株式会社マネーフォワード",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社マネーフォワード.svg"
   },
   {
     "id": 22,
@@ -84,6 +175,27 @@
     "image": "sponsors/ウォンテッドリー株式会社.svg"
   },
   {
+    "id": 28,
+    "name": "株式会社Voicy",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社Voicy.svg"
+  },
+  {
+    "id": 29,
+    "name": "弁護士ドットコム株式会社",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/弁護士ドットコム株式会社.png"
+  },
+  {
+    "id": 30,
+    "name": "株式会社カンム",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社カンム.svg"
+  },
+  {
     "id": 31,
     "name": "株式会社AMDlab",
     "class": "Bronze",
@@ -95,7 +207,7 @@
     "name": "株式会社mikan",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/株式会社mikan.png"
+    "image": "sponsors/株式会社mikan.svg"
   },
   {
     "id": 33,
@@ -119,6 +231,20 @@
     "image": "sponsors/STORES 株式会社.png"
   },
   {
+    "id": 36,
+    "name": "株式会社ナレッジワーク",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社ナレッジワーク.png"
+  },
+  {
+    "id": 37,
+    "name": "株式会社ギークニア",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社ギークニア.jpg"
+  },
+  {
     "id": 38,
     "name": "株式会社U-NEXT",
     "class": "Bronze",
@@ -131,6 +257,20 @@
     "class": "Bronze",
     "description": "",
     "image": "sponsors/株式会社アンドパッド.png"
+  },
+  {
+    "id": 40,
+    "name": "株式会社はてな",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社はてな.png"
+  },
+  {
+    "id": 41,
+    "name": "株式会社ギフティ",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社ギフティ.png"
   },
   {
     "id": 42,
