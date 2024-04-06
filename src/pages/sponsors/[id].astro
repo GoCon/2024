@@ -6,10 +6,15 @@ import { concatWithBase } from "@utils/concatWithBase";
 
 export async function getStaticPaths() {
   const sponsors = await getEntry("sponsors", "data");
-  return sponsors.data.map((sponsor) => ({
-    params: { id: sponsor.id },
-    props: { sponsor },
-  }));
+  return sponsors.data
+    .filter(
+      (sponsor) =>
+        sponsor.class === "Platinum Gold" || sponsor.class === "Gold",
+    )
+    .map((sponsor) => ({
+      params: { id: sponsor.id },
+      props: { sponsor },
+    }));
 }
 
 const { sponsor } = Astro.props;
