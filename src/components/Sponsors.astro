@@ -26,13 +26,15 @@ const bronzeSponsors = sponsors.data.filter(
     <div class="box">
       {
         platinumGoldSponsors.map((sponsor) => (
-          <Image
-            class="platinum"
-            src={concatWithBase(sponsor.image)}
-            alt={sponsor.name}
-            width={448}
-            height={242}
-          />
+          <a href={concatWithBase(`sponsors/${sponsor.id}`)}>
+            <Image
+              class="platinum"
+              src={concatWithBase(sponsor.image)}
+              alt={sponsor.name}
+              width={448}
+              height={242}
+            />
+          </a>
         ))
       }
     </div>
@@ -40,13 +42,15 @@ const bronzeSponsors = sponsors.data.filter(
     <div class="box">
       {
         goldSponsors.map((sponsor) => (
-          <Image
-            class="gold"
-            src={concatWithBase(sponsor.image)}
-            alt={sponsor.name}
-            width={448}
-            height={242}
-          />
+          <a href={concatWithBase(`sponsors/${sponsor.id}`)}>
+            <Image
+              class="gold"
+              src={concatWithBase(sponsor.image)}
+              alt={sponsor.name}
+              width={448}
+              height={242}
+            />
+          </a>
         ))
       }
     </div>
