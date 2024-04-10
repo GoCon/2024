@@ -6,29 +6,74 @@ import { concatWithBase } from "@utils/concatWithBase";
 
 export async function getStaticPaths() {
   const sponsors = await getEntry("sponsors", "data");
-  return sponsors.data.map((sponsor) => ({
-    params: { id: sponsor.id },
-    props: { sponsor },
-  }));
+  return sponsors.data
+    .filter(
+      (sponsor) =>
+        sponsor.class === "Platinum Gold" || sponsor.class === "Gold",
+    )
+    .map((sponsor) => ({
+      params: { id: sponsor.id },
+      props: { sponsor },
+    }));
 }
 
 const { sponsor } = Astro.props;
 ---
 
 <BaseLayout title={sponsor.name}>
-  <h1>{sponsor.name}</h1>
-  <Image
-    src={concatWithBase(sponsor.image)}
-    width="320"
-    height="240"
-    loading="lazy"
-    alt={sponsor.name}
-  />
-  <p>{sponsor.description}</p>
+  <div class="container">
+    <div class="card">
+      <Image
+        src={concatWithBase(sponsor.image)}
+        width="448"
+        height="242"
+        loading="lazy"
+        alt={sponsor.name}
+      />
+      <h1>{sponsor.name}</h1>
+      <h3 class="tier">{sponsor.class} スポンサー</h3>
+      <p>{sponsor.description}</p>
+    </div>
+  </div>
 </BaseLayout>
 
 <style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    padding-inline: 16px;
+
+    color: #222;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
   img {
     object-fit: contain;
+    margin: 16px 0;
+    @media screen and (max-width: 448px) {
+      max-width: 448px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .tier {
+    color: #666;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 48px;
+    @media screen and (max-width: 448px) {
+      font-size: 1rem;
+    }
   }
 </style>
