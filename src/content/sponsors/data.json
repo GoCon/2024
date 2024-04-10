@@ -1,8 +1,15 @@
 [
   {
+    "id": 0,
+    "name": "株式会社サイバーエージェント",
+    "class": "Venue",
+    "description": "",
+    "image": "sponsors/CyberAgent.png"
+  },
+  {
     "id": 1,
-    "name": "転職ドラフト",
     "class": "Platinum Gold",
+    "name": "転職ドラフト",
     "description": "「エンジニアの価値は世界が決める」\n転職ドラフトは、企業から年収付きで指名が届く、ITエンジニア向けの転職サービスです。\nITエンジニアが「自身の客観的な市場価値」を判断する機会は限られています。\n転職ドラフトは、評価におけるバイアスを排除し、ITエンジニアが実力で正当に評価され、実力に見合った報酬を得られる世界の実現を目指しています。\n利用企業数は累計700社以上。毎月600人超のITエンジニアが参加。\n挑戦的なキャリア形成の登竜門としてご利用いただけるよう、日々提供価値を拡充しています。",
     "image": "sponsors/転職ドラフト.png"
   },
@@ -11,7 +18,7 @@
     "name": "株式会社エブリー",
     "class": "Platinum Gold",
     "description": "",
-    "image": "sponsors/株式会社エブリー.svg"
+    "image": "sponsors/Every.svg"
   },
   {
     "id": 3,
@@ -179,7 +186,7 @@
     "name": "株式会社ミラティブ",
     "class": "Bronze",
     "description": "",
-    "image": "sponsors/株式会社ミラティブ.png"
+    "image": "sponsors/Mirrativ.png"
   },
   {
     "id": 27,

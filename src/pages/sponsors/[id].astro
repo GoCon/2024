@@ -9,7 +9,9 @@ export async function getStaticPaths() {
   return sponsors.data
     .filter(
       (sponsor) =>
-        sponsor.class === "Platinum Gold" || sponsor.class === "Gold",
+        sponsor.class === "Venue" ||
+        sponsor.class === "Platinum Gold" ||
+        sponsor.class === "Gold",
     )
     .map((sponsor) => ({
       params: { id: sponsor.id },

@@ -4,6 +4,9 @@ import { getEntry } from "astro:content";
 import { concatWithBase } from "@utils/concatWithBase";
 
 const sponsors = await getEntry("sponsors", "data");
+const venueSponsors = sponsors.data.filter(
+  (sponsor) => sponsor.class === "Venue",
+);
 const platinumGoldSponsors = sponsors.data.filter(
   (sponsor) => sponsor.class === "Platinum Gold",
 );
@@ -22,6 +25,22 @@ const bronzeSponsors = sponsors.data.filter(
   <div class="container">
     <h2>Sponsors</h2>
     <p>スポンサープランの募集は終了しました。</p>
+    <h3>会場スポンサー</h3>
+    <div class="box">
+      {
+        venueSponsors.map((sponsor) => (
+          <a href={concatWithBase(`sponsors/${sponsor.id}`)}>
+            <Image
+              class="platinum"
+              src={concatWithBase(sponsor.image)}
+              alt={sponsor.name}
+              width={448}
+              height={242}
+            />
+          </a>
+        ))
+      }
+    </div>
     <h3>Platinum "Go"ld</h3>
     <div class="box">
       {
@@ -128,6 +147,8 @@ const bronzeSponsors = sponsors.data.filter(
     img {
       object-fit: contain;
     }
+
+    .venue,
     .platinum,
     .gold {
       @media screen and (max-width: 448px) {
