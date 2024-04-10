@@ -1,5 +1,5 @@
 import { concatWithBase } from "../../src/utils/concatWithBase";
-import { describe, assert, expect, test } from "vitest";
+import { describe, expect, test } from "vitest";
 
 describe("concatWithBase", () => {
   test("prefixにBASE_URLを追加する", () => {
