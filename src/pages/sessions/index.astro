@@ -1,0 +1,33 @@
+---
+import BaseLayout from "@layouts/Base.astro";
+import Sessions from "@components/Sessions.astro";
+---
+
+<BaseLayout title="Sessions">
+  <section class="page">
+    <header class="page-header">
+      <h2 class="page-title">Sessions</h2>
+    </header>
+    <div class="page-body">
+      <Sessions />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 160px 65px 72px;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .page-body {
+    padding: 80px 65px;
+    background-color: #ebf5fa;
+  }
+</style>

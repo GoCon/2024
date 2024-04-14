@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+
+const sessions = await getEntry("sessions", "data");
+
+function trackClass(session: (typeof sessions)["data"][number]) {
+  switch (session.track) {
+    case "a":
+      return "room-a";
+    case "b":
+      return "room-b";
+    default:
+      throw new Error(`unknown session track: ${session.track}`);
+  }
+}
+
+function trackLabel(session: (typeof sessions)["data"][number]) {
+  switch (session.track) {
+    case "a":
+      return "Room A";
+    case "b":
+      return "Room B";
+    default:
+      throw new Error(`unknown session track: ${session.track}`);
+  }
+}
+
+function typeLabel(session: (typeof sessions)["data"][number]) {
+  switch (session.type) {
+    case "challenge":
+      return "Challenge Talk (20 mins.)";
+    case "long":
+      return "Long Talk (40 mins.)";
+    case "short":
+      return "Short Talk (20 mins.)";
+    default:
+      throw new Error(`unknown session type: ${session.type}`);
+  }
+}
+---
+
+<div class="container">
+  {
+    sessions.data.map((session) => (
+      <div class="row">
+        <div class:list={["session", trackClass(session)]}>
+          <div>
+            <p>{session.title}</p>
+            <p>{trackLabel(session)}</p>
+            <p>{session.description}</p>
+            <div class="speaker">
+              <Image
+                src={session.speaker.avatar}
+                width="40"
+                height="40"
+                loading="lazy"
+                alt={session.speaker.name}
+              />
+              <div>
+                <p>{session.speaker.name}</p>
+                <p>{session.speaker.company}</p>
+                <p>{typeLabel(session)}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .session a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .session img {
+    object-fit: contain;
+  }
+</style>

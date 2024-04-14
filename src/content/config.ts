@@ -1,6 +1,25 @@
 import { z, defineCollection } from "astro:content";
 
-const sponsorsCollection = defineCollection({
+const sessions = defineCollection({
+  type: "data",
+  schema: z.array(
+    z.object({
+      id: z.number(),
+      type: z.enum(["challenge", "long", "short"]),
+      track: z.enum(["a", "b"]),
+      language: z.enum(["en", "ja"]),
+      title: z.string(),
+      description: z.string(),
+      speaker: z.object({
+        avatar: z.string(),
+        name: z.string(),
+        company: z.string(),
+      }),
+    }),
+  ),
+});
+
+const sponsors = defineCollection({
   type: "data",
   schema: z.array(
     z.object({
@@ -12,6 +31,8 @@ const sponsorsCollection = defineCollection({
     }),
   ),
 });
+
 export const collections = {
-  sponsors: sponsorsCollection,
+  sessions,
+  sponsors,
 };
