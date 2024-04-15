@@ -5,7 +5,7 @@
     "track": "a",
     "language": "ja",
     "title": "Go Conference 2024 organizers",
-    "description": "Go言語1.22のリリースに伴い、net/httpパッケージにおけるいくつかの注目すべきアップデートが含まれています。これらのアップデートは、GoのHTTPサーバーのルーティング機能を大幅に強化し、パターンマッチングの能力を高めることを目的としています。",
+    "description": "Go言語1.22のリリースに伴い、net/httpパッケージにおけるいくつかの注目すべきアップデートが含まれています。",
     "speaker": {
       "avatar": "https://placehold.jp/40x40.png",
       "name": "Gopher",
@@ -14,20 +14,20 @@
   },
   {
     "id": 2,
-    "type": "short",
-    "track": "a",
-    "language": "ja",
+    "type": "long",
+    "track": "b",
+    "language": "en",
     "title": "Go Conference 2024 organizers",
     "description": "Go言語1.22のリリースに伴い、net/httpパッケージにおけるいくつかの注目すべきアップデートが含まれています。これらのアップデートは、GoのHTTPサーバーのルーティング機能を大幅に強化し、パターンマッチングの能力を高めることを目的としています。",
     "speaker": {
       "avatar": "https://placehold.jp/40x40.png",
-      "name": "Gopher",
-      "company": "株式会社XXX"
+      "name": "Super Long Named Gopher",
+      "company": "株式会社ナガーイナマエ"
     }
   },
   {
     "id": 3,
-    "type": "short",
+    "type": "challenge",
     "track": "a",
     "language": "ja",
     "title": "Go Conference 2024 organizers",
