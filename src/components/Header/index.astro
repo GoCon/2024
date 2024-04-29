@@ -23,6 +23,22 @@ import { concatWithBase } from "@utils/concatWithBase";
       <ul>
         <li><a href={concatWithBase()}>Home</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
+        <li>
+          <a
+            class="with-icon"
+            href="https://drive.google.com/file/d/1jfd7EEWBqSPBpZSnN2GgGnvZhfAarIXG/view"
+            target="_blank"
+            >Sponsor FAQ<i
+              ><Image
+                src={concatWithBase("ic_external_link.svg")}
+                alt="FAQ External Link"
+                width="16"
+                height="16"
+                color={"#666"}
+              /></i
+            ></a
+          >
+        </li>
         <!-- ページの準備ができ次第コメントアウトを外す -->
         <!-- <li><a href="#">Sessions</a></li>
       <li><a href="#">Timetable</a></li>
@@ -120,6 +136,12 @@ import { concatWithBase } from "@utils/concatWithBase";
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  a.with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
   }
 
   img {
