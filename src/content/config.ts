@@ -5,8 +5,8 @@ const sessions = defineCollection({
   schema: z.array(
     z.object({
       id: z.number(),
-      type: z.enum(["challenge", "long", "short"]),
-      track: z.enum(["a", "b"]),
+      type: z.enum(["challenge", "long", "short", "lt"]),
+      track: z.enum(["room-1", "room-2"]),
       language: z.enum(["en", "ja"]),
       title: z.string(),
       description: z.string(),

@@ -7,10 +7,10 @@ const sessions = await getEntry("sessions", "data");
 
 function trackClass(session: (typeof sessions)["data"][number]) {
   switch (session.track) {
-    case "a":
-      return "room-a";
-    case "b":
-      return "room-b";
+    case "room-1":
+      return "Room 1";
+    case "room-2":
+      return "Room 2";
     default:
       throw new Error(`unknown session track: ${session.track}`);
   }
@@ -18,9 +18,9 @@ function trackClass(session: (typeof sessions)["data"][number]) {
 
 function trackLabel(session: (typeof sessions)["data"][number]) {
   switch (session.track) {
-    case "a":
+    case "room-1":
       return "Room A";
-    case "b":
+    case "room-2":
       return "Room B";
     default:
       throw new Error(`unknown session track: ${session.track}`);
@@ -29,6 +29,8 @@ function trackLabel(session: (typeof sessions)["data"][number]) {
 
 function typeLabel(session: (typeof sessions)["data"][number]) {
   switch (session.type) {
+    case "lt":
+      return "5 mins.";
     case "challenge":
     case "short":
       return "20 mins.";
