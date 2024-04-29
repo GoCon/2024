@@ -27,7 +27,11 @@ import Sessions from "@components/Sessions.astro";
   }
 
   .page-body {
-    padding: 80px 65px;
+    padding: 80px 20px;
     background-color: #ebf5fa;
+
+    @media screen and (max-width: 768px) {
+      padding: 32px 16px;
+    }
   }
 </style>
