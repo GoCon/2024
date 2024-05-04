@@ -6,7 +6,14 @@ const sponsorsCollection = defineCollection({
     z.object({
       id: z.number(),
       name: z.string(),
-      class: z.enum(["Venue", "Platinum Gold", "Gold", "Silver", "Bronze"]),
+      class: z.enum([
+        "Venue",
+        "Platinum Gold",
+        "Gold",
+        "Silver",
+        "Bronze",
+        "Gopher",
+      ]),
       description: z.string(),
       image: z.string(),
     }),
