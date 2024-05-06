@@ -329,6 +329,13 @@
     "image": "sponsors/株式会社Newbees.svg"
   },
   {
+    "id": 47,
+    "name": "Classi株式会社",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/Classi株式会社.png"
+  },
+  {
     "id": 48,
     "name": "株式会社リクルート",
     "class": "Bronze",
@@ -355,5 +362,19 @@
     "class": "Bronze",
     "description": "",
     "image": "sponsors/株式会社CARTA HOLDINGS.svg"
+  },
+  {
+    "id": 53,
+    "name": "chihiro",
+    "class": "Gopher",
+    "description": "",
+    "image": "sponsors/chihiro.jpg"
+  },
+  {
+    "id": 54,
+    "name": "yagi2",
+    "class": "Gopher",
+    "description": "net/http",
+    "image": "sponsors/yagi2.png"
   }
 ]
