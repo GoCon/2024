@@ -364,6 +364,13 @@
     "image": "sponsors/株式会社CARTA HOLDINGS.svg"
   },
   {
+    "id": 52,
+    "name": "株式会社MIXI",
+    "class": "Bronze",
+    "description": "",
+    "image": "sponsors/株式会社MIXI.png"
+  },
+  {
     "id": 53,
     "name": "chihiro",
     "class": "Gopher",
