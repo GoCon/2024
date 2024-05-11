@@ -46,6 +46,27 @@ import { concatWithBase } from "@utils/concatWithBase";
         alt="X/Twitter"
       /> #gocon
     </a>
+    <p class="cc">
+      <a
+        property="dct:title"
+        rel="cc:attributionURL"
+        href="https://gocon.jp/2024">Go Conference 2024 Website</a
+      > is licensed under <a
+        href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+        target="_blank"
+        rel="license noopener noreferrer"
+        style="display:inline-block;"
+        >CC BY 4.0<img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+          alt=""
+        /><img
+          style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+          alt=""
+        /></a
+      >
+    </p>
     <div class="credit">
       <p>Go Conference</p>
       <small>
@@ -114,12 +135,22 @@ import { concatWithBase } from "@utils/concatWithBase";
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 32px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
       gap: 8px;
       padding: 16px;
+    }
+  }
+
+  .cc {
+    display: block;
+    color: #666;
+
+    @media screen and (max-width: 768px) {
+      order: 3;
     }
   }
 
