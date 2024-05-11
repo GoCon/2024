@@ -40,11 +40,26 @@ import { concatWithBase } from "@utils/concatWithBase";
           >
         </li>
         <!-- ページの準備ができ次第コメントアウトを外す -->
-        <!-- <li><a href="#">Sessions</a></li>
-      <li><a href="#">Timetable</a></li>
-      <li><a href="#">Floor Guide</a></li>
-      <li><a href="#">Staff</a></li>
-      <li><a href="#">English</a></li> -->
+        <!-- <li><a href="#">Sessions</a></li> -->
+        <li>
+          <a
+            class="with-icon"
+            href="https://sessionize.com/api/v2/7zlcfd7c/view/GridSmart"
+            target="_blank"
+            >Timetable<i
+              ><Image
+                src={concatWithBase("ic_external_link.svg")}
+                alt="FAQ External Link"
+                width="16"
+                height="16"
+                color={"#666"}
+              /></i
+            ></a
+          >
+        </li>
+        <!-- <li><a href="#">Floor Guide</a></li> -->
+        <!-- <li><a href="#">Staff</a></li> -->
+        <!-- <li><a href="#">English</a></li> -->
       </ul>
     </nav>
   </div>
@@ -121,11 +136,12 @@ import { concatWithBase } from "@utils/concatWithBase";
 
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 20px;
     font-size: 1.3rem;
 
     @media (max-width: 768px) {
       flex-direction: column;
+      gap: 16px;
     }
   }
 
