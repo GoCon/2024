@@ -19,6 +19,9 @@ const silverSponsors = sponsors.data.filter(
 const bronzeSponsors = sponsors.data.filter(
   (sponsor) => sponsor.class === "Bronze",
 );
+const gopherSponsors = sponsors.data.filter(
+  (sponsor) => sponsor.class === "Gopher",
+);
 ---
 
 <div id="sponsors" class="background">
@@ -101,6 +104,24 @@ const bronzeSponsors = sponsors.data.filter(
         ))
       }
     </div>
+    <h3>Gopher</h3>
+    <div class="box">
+      {
+        gopherSponsors.map((sponsor) => (
+          <div>
+            <Image
+              class="gopher"
+              src={concatWithBase(sponsor.image)}
+              alt={sponsor.name}
+              width={123}
+              height={69}
+            />
+            <div>{sponsor.name}</div>
+            {sponsor.description && <div>fav: {sponsor.description}</div>}
+          </div>
+        ))
+      }
+    </div>
   </div>
 
   <style>
@@ -164,6 +185,11 @@ const bronzeSponsors = sponsors.data.filter(
       }
     }
     .bronze {
+      @media screen and (max-width: 448px) {
+        width: 50%;
+      }
+    }
+    .gopher {
       @media screen and (max-width: 448px) {
         width: 50%;
       }
