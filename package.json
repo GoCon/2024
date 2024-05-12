@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
+    "@astropub/md": "^0.4.0",
     "@fontsource/poppins": "^5.0.12",
     "astro": "4.4.0",
     "sharp": "^0.33.3",

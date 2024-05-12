@@ -14,6 +14,7 @@ const sessions = defineCollection({
         avatar: z.string(),
         name: z.string(),
         company: z.string(),
+        bio: z.string(),
       }),
     }),
   ),

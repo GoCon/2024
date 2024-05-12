@@ -2,59 +2,14 @@
 import { Image } from "astro:assets";
 import { getEntry } from "astro:content";
 import { concatWithBase } from "@utils/concatWithBase";
+import {
+  getLevelLabel,
+  getTrackClass,
+  getTrackLabel,
+  getTypeLabel,
+} from "@utils/session";
 
 const sessions = await getEntry("sessions", "data");
-
-function trackClass(session: (typeof sessions)["data"][number]) {
-  switch (session.track) {
-    case "room-1":
-      return "Room 1";
-    case "room-2":
-      return "Room 2";
-    default:
-      throw new Error(`unknown session track: ${session.track}`);
-  }
-}
-
-function trackLabel(session: (typeof sessions)["data"][number]) {
-  switch (session.track) {
-    case "room-1":
-      return "Room A";
-    case "room-2":
-      return "Room B";
-    default:
-      throw new Error(`unknown session track: ${session.track}`);
-  }
-}
-
-function levelLabel(session: (typeof sessions)["data"][number]) {
-  switch (session.level) {
-    case "advanced":
-      return "Advanced";
-    case "all":
-      return "All";
-    case "beginner":
-      return "Beginner";
-    case "intermediate":
-      return "Intermediate";
-    default:
-      throw new Error(`unknown session level: ${session.type}`);
-  }
-}
-
-function typeLabel(session: (typeof sessions)["data"][number]) {
-  switch (session.type) {
-    case "lt":
-      return "5 mins.";
-    case "challenge":
-    case "short":
-      return "20 mins.";
-    case "long":
-      return "40 mins.";
-    default:
-      throw new Error(`unknown session type: ${session.type}`);
-  }
-}
 ---
 
 <div class="container">
@@ -63,11 +18,11 @@ function typeLabel(session: (typeof sessions)["data"][number]) {
       sessions.data.map((session) => (
         <a
           href={concatWithBase(`sessions/${session.id}`)}
-          class:list={["session", trackClass(session)]}
+          class:list={["session", getTrackClass(session.track)]}
         >
           <p class="title">{session.title}</p>
           <p>
-            <span class="room">{trackLabel(session)}</span>
+            <span class="room">{getTrackLabel(session.track)}</span>
           </p>
           <p class="description">{session.description}</p>
           <div class="info">
@@ -86,8 +41,8 @@ function typeLabel(session: (typeof sessions)["data"][number]) {
               </div>
             </div>
             <ul class="attrs">
-              <li class="attr">{levelLabel(session)}</li>
-              <li class="attr">{typeLabel(session)}</li>
+              <li class="attr">{getLevelLabel(session.level)}</li>
+              <li class="attr">{getTypeLabel(session.type)}</li>
             </ul>
           </div>
         </a>
@@ -155,7 +110,14 @@ function typeLabel(session: (typeof sessions)["data"][number]) {
     text-align: center;
     color: #222;
     padding: 4px 12px;
-    background-color: #6fd4c2;
+
+    .session.room-1 & {
+      background-color: #6fd4c2;
+    }
+
+    .session.room-2 & {
+      background-color: #6fd4c2;
+    }
   }
 
   .description {
