@@ -6,8 +6,8 @@ const sessions = defineCollection({
     z.object({
       id: z.number(),
       type: z.enum(["challenge", "long", "short", "lt"]),
+      level: z.enum(["advanced", "all", "beginner", "intermediate"]),
       track: z.enum(["room-1", "room-2"]),
-      language: z.enum(["en", "ja"]),
       title: z.string(),
       description: z.string(),
       speaker: z.object({

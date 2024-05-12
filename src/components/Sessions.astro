@@ -27,6 +27,21 @@ function trackLabel(session: (typeof sessions)["data"][number]) {
   }
 }
 
+function levelLabel(session: (typeof sessions)["data"][number]) {
+  switch (session.level) {
+    case "advanced":
+      return "Advanced";
+    case "all":
+      return "All";
+    case "beginner":
+      return "Beginner";
+    case "intermediate":
+      return "Intermediate";
+    default:
+      throw new Error(`unknown session level: ${session.type}`);
+  }
+}
+
 function typeLabel(session: (typeof sessions)["data"][number]) {
   switch (session.type) {
     case "lt":
@@ -70,7 +85,10 @@ function typeLabel(session: (typeof sessions)["data"][number]) {
                 <p class="speaker-company">{session.speaker.company}</p>
               </div>
             </div>
-            <p class="type">{typeLabel(session)}</p>
+            <ul class="attrs">
+              <li class="attr">{levelLabel(session)}</li>
+              <li class="attr">{typeLabel(session)}</li>
+            </ul>
           </div>
         </a>
       ))
@@ -192,7 +210,12 @@ function typeLabel(session: (typeof sessions)["data"][number]) {
     color: #666;
   }
 
-  .type {
+  .attrs {
+    flex-shrink: 0;
+    list-style: none;
+  }
+
+  .attr {
     font-size: 12px;
     color: #666;
     flex-shrink: 0;
