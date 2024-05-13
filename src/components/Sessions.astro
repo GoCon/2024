@@ -1,0 +1,185 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+import { concatWithBase } from "@utils/concatWithBase";
+import {
+  getLevelLabel,
+  getTrackClass,
+  getTrackLabel,
+  getTypeLabel,
+} from "@utils/session";
+
+const sessions = await getEntry("sessions", "data");
+---
+
+<div class="container">
+  <div class="sessions">
+    {
+      sessions.data.map((session) => (
+        <a
+          href={concatWithBase(`sessions/${session.id}`)}
+          class:list={["session", getTrackClass(session.track)]}
+        >
+          <p class="title">{session.title}</p>
+          <p>
+            <span class="room">{getTrackLabel(session.track)}</span>
+          </p>
+          <p class="description">{session.description}</p>
+          <div class="info">
+            <div class="speaker">
+              <Image
+                src={session.speaker.avatar}
+                width="40"
+                height="40"
+                loading="lazy"
+                alt={session.speaker.name}
+                class="speaker-avatar"
+              />
+              <div>
+                <p class="speaker-name">{session.speaker.name}</p>
+                <p class="speaker-company">{session.speaker.company}</p>
+              </div>
+            </div>
+            <ul class="attrs">
+              <li class="attr">{getLevelLabel(session.level)}</li>
+              <li class="attr">{getTypeLabel(session.type)}</li>
+            </ul>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .sessions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .session {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 342px;
+    text-decoration: none;
+    color: #222;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media screen and (max-width: 1185px) {
+      width: calc(50% - 16px);
+    }
+
+    @media screen and (max-width: 768px) {
+      width: auto;
+    }
+  }
+
+  .title {
+    --max-lines: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+    overflow: hidden;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.25;
+    min-height: calc(var(--max-lines) * 1.25em);
+
+    @media screen and (max-width: 768px) {
+      --max-lines: 1;
+    }
+  }
+
+  .room {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: #222;
+    padding: 4px 12px;
+
+    .session.room-1 & {
+      background-color: #6fd4c2;
+    }
+
+    .session.room-2 & {
+      background-color: #6fd4c2;
+    }
+  }
+
+  .description {
+    --max-lines: 7;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.25;
+    min-height: calc(var(--max-lines) * 1.25em);
+
+    @media screen and (max-width: 768px) {
+      --max-lines: 5;
+    }
+  }
+
+  .info {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+  }
+
+  .speaker {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .speaker-avatar {
+    object-fit: contain;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .speaker-name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-weight: bold;
+  }
+
+  .speaker-company {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .attrs {
+    flex-shrink: 0;
+    list-style: none;
+  }
+
+  .attr {
+    font-size: 12px;
+    color: #666;
+    flex-shrink: 0;
+  }
+</style>

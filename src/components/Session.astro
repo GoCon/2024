@@ -1,0 +1,156 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+import { Markdown } from "@astropub/md";
+import {
+  getLevelLabel,
+  getTrackClass,
+  getTrackLabel,
+  getTypeLabel,
+} from "@utils/session";
+import { concatWithBase } from "@utils/concatWithBase";
+
+interface Props {
+  session: CollectionEntry<"sessions">["data"][number];
+}
+
+const { session } = Astro.props;
+---
+
+<div class="container">
+  <div class:list={["session", getTrackClass(session.track)]}>
+    <div class="info">
+      <p class="track">{getTrackLabel(session.track)}</p>
+      <p class="attr">{getLevelLabel(session.level)}</p>
+      <p class="attr">{getTypeLabel(session.type)}</p>
+    </div>
+    <div class="description">
+      <Markdown of={session.description} />
+    </div>
+    <div class="speaker">
+      <div class="speaker-upper">
+        <Image
+          src={session.speaker.avatar}
+          width="58"
+          height="58"
+          loading="lazy"
+          alt={session.speaker.name}
+          class="speaker-avatar"
+        />
+        <div class="speaker-name-and-company">
+          <p class="speaker-name">{session.speaker.name}</p>
+          <p class="speaker-company">{session.speaker.company}</p>
+        </div>
+        {
+          session.speaker.twitter && (
+            <div class="speaker-twitter">
+              <a href={session.speaker.twitter}>
+                <Image
+                  src={concatWithBase("ic_x.svg")}
+                  width={18}
+                  height={18}
+                  alt="X/Twitter"
+                />
+              </a>
+            </div>
+          )
+        }
+      </div>
+      <p class="speaker-lower">{session.speaker.bio}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .session {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .track {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: #222;
+    padding: 4px 12px;
+
+    .session.room-1 & {
+      background-color: #6fd4c2;
+    }
+
+    .session.room-2 & {
+      background-color: #6fd4c2;
+    }
+  }
+
+  .attr {
+    font-size: 12px;
+    color: #666;
+    flex-shrink: 0;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    ol,
+    ul {
+      padding-left: 1em;
+    }
+
+    #footnote-label {
+      display: none;
+    }
+  }
+
+  .speaker {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px;
+    border-radius: 12px;
+    background-color: #ebf5fa;
+  }
+
+  .speaker-upper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .speaker-avatar {
+    object-fit: contain;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .speaker-name-and-company {
+    flex-grow: 1;
+  }
+
+  .speaker-name {
+    font-weight: bold;
+  }
+
+  .speaker-company {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .speaker-twitter {
+    align-self: flex-start;
+  }
+</style>

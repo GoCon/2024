@@ -1,0 +1,57 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "@layouts/Base.astro";
+import Session from "@components/Session.astro";
+
+export async function getStaticPaths() {
+  const sessions = await getEntry("sessions", "data");
+  return sessions.data.map((session) => ({
+    params: { id: session.id },
+    props: { session },
+  }));
+}
+
+const { session } = Astro.props;
+---
+
+<BaseLayout title="Sessions">
+  <section class="page">
+    <header class="page-header">
+      <h2 class="page-title">{session.title}</h2>
+    </header>
+    <div class="page-body">
+      <Session session={session} />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 160px 65px 72px;
+
+    @media screen and (max-width: 1185px) {
+      padding-top: 100px;
+      padding-bottom: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 18px;
+    }
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .page-body {
+    padding: 0 20px 80px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 16px 32px;
+    }
+  }
+</style>
