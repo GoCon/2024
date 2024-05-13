@@ -10,7 +10,8 @@
       "avatar": "https://sessionize.com/image/eaae-400o400o1-XqdyMgJnQyXV5Vj6H7Hmnm.png",
       "name": "Kiki Utagawa",
       "company": "Web Application Engineer at Hatena inc.",
-      "bio": "普段は京都でビールを飲んでいます"
+      "bio": "普段は京都でビールを飲んでいます",
+      "twitter": "https://twitter.com/utgwkk"
     }
   },
   {
@@ -24,7 +25,8 @@
       "avatar": "https://sessionize.com/image/a3e1-400o400o1-55dc647a-d774-42bc-9974-d0262cc0af92.jpg",
       "name": "Takuya Ueda",
       "company": "Knowledge Work Inc.",
-      "bio": "Takuya Ueda is one of organizer of Go Conference in Japan. He is Google Developer Expert (Go). He works for the growth of the Go community in Japan. He also loves the Go Gopher and drawing Gopher illustrations."
+      "bio": "Takuya Ueda is one of organizer of Go Conference in Japan. He is Google Developer Expert (Go). He works for the growth of the Go community in Japan. He also loves the Go Gopher and drawing Gopher illustrations.",
+      "twitter": "https://twitter.com/tentnenn"
     }
   },
   {
@@ -40,7 +42,8 @@
       "avatar": "https://sessionize.com/image/fae8-400o400o1-aLWFrqkCA9K7Afrq7DodJA.png",
       "name": "Ken'ichirou Oyama",
       "company": "GMOペパボ株式会社 技術部技術基盤チーム プリンシパルエンジニア",
-      "bio": "少し実用的で小さなOSSを書くのが趣味。"
+      "bio": "少し実用的で小さなOSSを書くのが趣味。",
+      "twitter": "https://twitter.com/k1LoW"
     }
   },
   {
@@ -56,7 +59,8 @@
       "avatar": "https://sessionize.com/image/60e9-400o400o1-J2J4ysMBtk57pYeK4BYeuB.png",
       "name": "Miki Masumoto",
       "company": "UPSIDER Inc.",
-      "bio": "Engineering Manager and back-end engineer in UPSIDER, Inc., a startup company providing B2B payment services for businesses mainly in Japan."
+      "bio": "Engineering Manager and back-end engineer in UPSIDER, Inc., a startup company providing B2B payment services for businesses mainly in Japan.",
+      "twitter": "https://twitter.com/m_miki0108"
     }
   },
   {
@@ -72,7 +76,8 @@
       "avatar": "https://sessionize.com/image/f7a7-400o400o1-wq1oA98cGxXHdTrHiAA5G4.jpg",
       "name": "Vaibhav Gupta",
       "company": "Backend Engineer | Golang Developer ",
-      "bio": "As a backend engineer with 2 years of experience, I have a passion for technology and a strong understanding of development concepts. I have developed expertise in Go, gRPC, and DevOps concepts."
+      "bio": "As a backend engineer with 2 years of experience, I have a passion for technology and a strong understanding of development concepts. I have developed expertise in Go, gRPC, and DevOps concepts.",
+      "twitter": "https://twitter.com/97GuptaVaibhav"
     }
   },
   {
@@ -88,7 +93,8 @@
       "avatar": "https://sessionize.com/image/68e3-400o400o1-4NdFY2xxHT5zXXZViBMoWu.jpg",
       "name": "Takahito Yamatoya",
       "company": "株式会社メルコイン, VP of Engineering",
-      "bio": "2007年早稲田大学社会科学部卒業後、NECネクサソリューションズ株式会社に新卒として入社。その後、ゲーム制作会社でデータベーススペシャリスト、株式会社ホワイトプラスで開発マネージャーを経て、2018年bitFlyerに入社。SRE部長、執行役員システム開発本部長を歴任。2024年1月株式会社メルコイン執行役員 VP of Engineeringに就任。"
+      "bio": "2007年早稲田大学社会科学部卒業後、NECネクサソリューションズ株式会社に新卒として入社。その後、ゲーム制作会社でデータベーススペシャリスト、株式会社ホワイトプラスで開発マネージャーを経て、2018年bitFlyerに入社。SRE部長、執行役員システム開発本部長を歴任。2024年1月株式会社メルコイン執行役員 VP of Engineeringに就任。",
+      "twitter": "https://twitter.com/t_yamatoya"
     }
   },
   {
@@ -104,7 +110,8 @@
       "avatar": "https://sessionize.com/image/6bfc-400o400o1-pxtndoNkp3YcpUmXeoeMgm.jpg",
       "name": "Kazuhiro Sakurayama",
       "company": "LINEヤフー株式会社",
-      "bio": "2020年 ヤフー株式会社入社"
+      "bio": "2020年 ヤフー株式会社入社",
+      "twitter": "https://twitter.com/haruyama480"
     }
   },
   {
@@ -120,7 +127,8 @@
       "avatar": "https://sessionize.com/image/ff14-400o400o1-HJgwQjsrgCAHwmSKxaM9Qx.jpg",
       "name": "Shoki Hata",
       "company": "Kanmu, Inc.",
-      "bio": "Software Engineer at Kanmu, Inc."
+      "bio": "Software Engineer at Kanmu, Inc.",
+      "twitter": "https://twitter.com/sho_hata_"
     }
   },
   {
@@ -136,7 +144,8 @@
       "avatar": "https://sessionize.com/image/2eed-400o400o1-Tm6kz6jKAczpAoMiurfFXr.png",
       "name": "Satoru Kawahara",
       "company": "株式会社カンム",
-      "bio": "関数型プログラミングやコントロールオペレータ､型システム､言語処理系など｡Go歴1年弱｡"
+      "bio": "関数型プログラミングやコントロールオペレータ､型システム､言語処理系など｡Go歴1年弱｡",
+      "twitter": "https://twitter.com/nymphium"
     }
   },
   {
@@ -152,7 +161,8 @@
       "avatar": "https://sessionize.com/image/e06b-400o400o1-LjwJCmzZWeSs1663GAEXGN.jpg",
       "name": "Natsumi Kojima",
       "company": "ANDPAD Inc.",
-      "bio": "社内開発者向けの分散DB基盤の運用・ライブコマースサービスの開発・toB向けサービスの開発を経て、2021年6月にANDPADに入社。 現在はバックエンドエンジニアとして、マイクロサービスの基盤開発に従事。"
+      "bio": "社内開発者向けの分散DB基盤の運用・ライブコマースサービスの開発・toB向けサービスの開発を経て、2021年6月にANDPADに入社。 現在はバックエンドエンジニアとして、マイクロサービスの基盤開発に従事。",
+      "twitter": "https://twitter.com/replu5"
     }
   },
   {
@@ -168,7 +178,8 @@
       "avatar": "https://sessionize.com/image/4a4f-400o400o1-Mqm8kLk2i4WZShXVt6yUuL.jpg",
       "name": "Shota Iwami",
       "company": "CyberAgent, Inc.",
-      "bio": "株式会社サイバーエージェント所属。普段はDX的なことをしています。\r\nドローンが好きです。\r\n自動生成や自動計装周りに関心があります"
+      "bio": "株式会社サイバーエージェント所属。普段はDX的なことをしています。\r\nドローンが好きです。\r\n自動生成や自動計装周りに関心があります",
+      "twitter": "https://twitter.com/B_Sardine"
     }
   },
   {
@@ -184,7 +195,8 @@
       "avatar": "https://sessionize.com/image/6ac5-400o400o1-4267faff-b45c-4867-868f-3dcca0492d3e.jpg",
       "name": "奥村 優哉",
       "company": "株式会社LayerX",
-      "bio": "低レイヤや暗号関連の技術に興味があります"
+      "bio": "低レイヤや暗号関連の技術に興味があります",
+      "twitter": "https://twitter.com/convto"
     }
   },
   {
@@ -200,7 +212,8 @@
       "avatar": "https://sessionize.com/image/5c50-400o400o1-GqU9q9jMsdE9DvqCamjqKt.png",
       "name": "Nobishii N/A",
       "company": "Software engineer",
-      "bio": "Software engineer who wants to study programming, software engineering, computer science, math/physics."
+      "bio": "Software engineer who wants to study programming, software engineering, computer science, math/physics.",
+      "twitter": "https://twitter.com/shino_nobishii"
     }
   },
   {
@@ -216,7 +229,8 @@
       "avatar": "https://sessionize.com/image/083a-400o400o1-DXaNk9UpKUm7xot33gV5nY.jpg",
       "name": "唐木 稜生",
       "company": "株式会社サイバーエージェント",
-      "bio": "ゲームのバックエンドエンジニアです。ボーカロイドが好きです。"
+      "bio": "ゲームのバックエンドエンジニアです。ボーカロイドが好きです。",
+      "twitter": "https://twitter.com/karamaru_alpha"
     }
   },
   {
@@ -232,7 +246,8 @@
       "avatar": "https://sessionize.com/image/e355-400o400o1-pcZSfa5iZrtPnyPSErBYXF.jpeg",
       "name": "Naoki Kuroda",
       "company": "株式会社サイバーエージェント",
-      "bio": "株式会社サイバーエージェント2023卒で、AI事業本部で広告プロダクトのエンジニアをしています。学生時代は京都で過ごしました。"
+      "bio": "株式会社サイバーエージェント2023卒で、AI事業本部で広告プロダクトのエンジニアをしています。学生時代は京都で過ごしました。",
+      "twitter": "https://twitter.com/knkurokuro7"
     }
   },
   {
@@ -248,7 +263,8 @@
       "avatar": "https://sessionize.com/image/90d0-400o400o1-BDPoGYrXVpj7FDvPkezqJW.png",
       "name": "岸田 慎之介",
       "company": "SO Technologies株式会社,バックエンドエンジニア",
-      "bio": "2021年にSO Technologies株式会社に入社。ATOM事業本部プロダクト開発グループに配属。ATOMのAPIの開発や媒体APIの対応、レポート生成の基盤部分の改修に従事。毎週ボルダリングに通っている。"
+      "bio": "2021年にSO Technologies株式会社に入社。ATOM事業本部プロダクト開発グループに配属。ATOMのAPIの開発や媒体APIの対応、レポート生成の基盤部分の改修に従事。毎週ボルダリングに通っている。",
+      "twitter": "https://twitter.com/mwudo"
     }
   },
   {
@@ -264,7 +280,8 @@
       "avatar": "https://sessionize.com/image/b809-400o400o1-GwZjqfuB33jbJrtF8KGhZH.jpg",
       "name": "Koki Senda",
       "company": "Voicy, Inc.",
-      "bio": "株式会社Voicyのソフトウェアエンジニア。\r\n楽天にてオンライン決済システムの開発・運用に携わったのち、Voicyのヘビーリスナーを経て、2021年12月にVoicyに入社。モバイルアプリのバックエンドAPIや、通知・音声処理等の基盤システムを開発する。また、KubernetesやAWS上の各種リソース管理、モニタリング、CI/CDの整備等も担当。\r\n最近の趣味は将棋とギターとオムライス作り。"
+      "bio": "株式会社Voicyのソフトウェアエンジニア。楽天にてオンライン決済システムの開発・運用に携わったのち、Voicyのヘビーリスナーを経て、2021年12月にVoicyに入社。モバイルアプリのバックエンドAPIや、通知・音声処理等の基盤システムを開発する。また、KubernetesやAWS上の各種リソース管理、モニタリング、CI/CDの整備等も担当。最近の趣味は将棋とギターとオムライス作り。",
+      "twitter": "https://twitter.com/thousan_da"
     }
   },
   {
@@ -280,7 +297,8 @@
       "avatar": "https://sessionize.com/image/0dac-400o400o1-ninN5PsSMAZgFspykYMzs7.jpg",
       "name": "Yuki Bobier Koshimizu",
       "company": "Software Engineer at ZOZO",
-      "bio": "Yuki Bobier Koshimizu is a software engineer at ZOZO. He is passionate about Go and how to develop truly \"soft\" software."
+      "bio": "Yuki Bobier Koshimizu is a software engineer at ZOZO. He is passionate about Go and how to develop truly \"soft\" software.",
+      "twitter": "https://twitter.com/YukiBobier"
     }
   },
   {
@@ -296,7 +314,8 @@
       "avatar": "https://sessionize.com/image/bd31-400o400o1-Tf982nuG13LPratEENuXG2.png",
       "name": "Kotaro Abe",
       "company": "株式会社MICIN ソフトウェアエンジニア",
-      "bio": "治験業務支援のSaaSを開発しております。"
+      "bio": "治験業務支援のSaaSを開発しております。",
+      "twitter": "https://twitter.com/abekoh_bcky"
     }
   },
   {
@@ -312,7 +331,8 @@
       "avatar": "https://sessionize.com/image/a577-400o400o1-4AoRYEWzBtVoAKLrudXf6A.png",
       "name": "Kenta Takeuchi",
       "company": "ソフトウェアエンジニア",
-      "bio": "ソフトウェアエンジニア"
+      "bio": "ソフトウェアエンジニア",
+      "twitter": "https://twitter.com/bmf_san"
     }
   },
   {
@@ -328,7 +348,8 @@
       "avatar": "https://sessionize.com/image/239d-400o400o1-4a31fc01-c070-4e20-9703-ffcf634d6352.jpg",
       "name": "Reo Uehara",
       "company": "株式会社Finatext",
-      "bio": "Goとサウナが好き"
+      "bio": "Goとサウナが好き",
+      "twitter": "https://twitter.com/_uhzz_"
     }
   },
   {
@@ -344,7 +365,8 @@
       "avatar": "https://sessionize.com/image/e24a-400o400o1-9RjPuwEc6FAe3t4iMhvNSr.jpg",
       "name": "Yoshiharu Suzuki",
       "company": "株式会社HRBrain",
-      "bio": "大手精密機器メーカーにて約14年間、Windowsアプリケーションやライブラリ、Webサービスなど幅広くソフトウェア開発に携わる。またそのなかで、プログラマ、アーキテクト、プロジェクトマネージャーを経験。その後、モバイル決済スタートアップを経て、2020年に(株)HRBrainに入社。バックエンドエンジニアとしてGoを用いてサービスの可用性強化や新機能開発を行いながら、テックリードとして技術面からのチームビルディングも推進する。"
+      "bio": "大手精密機器メーカーにて約14年間、Windowsアプリケーションやライブラリ、Webサービスなど幅広くソフトウェア開発に携わる。またそのなかで、プログラマ、アーキテクト、プロジェクトマネージャーを経験。その後、モバイル決済スタートアップを経て、2020年に(株)HRBrainに入社。バックエンドエンジニアとしてGoを用いてサービスの可用性強化や新機能開発を行いながら、テックリードとして技術面からのチームビルディングも推進する。",
+      "twitter": null
     }
   }
 ]

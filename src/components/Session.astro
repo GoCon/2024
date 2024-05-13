@@ -37,10 +37,24 @@ const { session } = Astro.props;
           alt={session.speaker.name}
           class="speaker-avatar"
         />
-        <div>
+        <div class="speaker-name-and-company">
           <p class="speaker-name">{session.speaker.name}</p>
           <p class="speaker-company">{session.speaker.company}</p>
         </div>
+        {
+          session.speaker.twitter && (
+            <div class="speaker-twitter">
+              <a href={session.speaker.twitter}>
+                <Image
+                  src={concatWithBase("ic_x.svg")}
+                  width={18}
+                  height={18}
+                  alt="X/Twitter"
+                />
+              </a>
+            </div>
+          )
+        }
       </div>
       <p class="speaker-lower">{session.speaker.bio}</p>
     </div>
@@ -123,6 +137,10 @@ const { session } = Astro.props;
     flex-shrink: 0;
   }
 
+  .speaker-name-and-company {
+    flex-grow: 1;
+  }
+
   .speaker-name {
     font-weight: bold;
   }
@@ -130,5 +148,9 @@ const { session } = Astro.props;
   .speaker-company {
     font-size: 14px;
     color: #666;
+  }
+
+  .speaker-twitter {
+    align-self: flex-start;
   }
 </style>

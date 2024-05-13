@@ -15,6 +15,7 @@ const sessions = defineCollection({
         name: z.string(),
         company: z.string(),
         bio: z.string(),
+        twitter: z.string().nullable(),
       }),
     }),
   ),
