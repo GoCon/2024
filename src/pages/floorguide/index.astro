@@ -1,0 +1,64 @@
+---
+import BaseLayout from "@layouts/Base.astro";
+import { concatWithBase } from "@utils/concatWithBase";
+---
+
+<BaseLayout title="Sessions">
+  <section class="page">
+    <header class="page-header">
+      <h2 class="page-title">Floor Guide</h2>
+    </header>
+    <div class="page-body">
+      <picture class="center">
+        <img
+          src={concatWithBase("floorguide.png")}
+          alt="Floor Guide"
+          class="responsive-img"
+        />
+      </picture>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding: 160px 65px 72px;
+
+    @media screen and (max-width: 1185px) {
+      padding-top: 100px;
+      padding-bottom: 45px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 40px;
+      padding-bottom: 18px;
+    }
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .page-body {
+    padding: 80px 20px;
+    background-color: #ebf5fa;
+
+    @media screen and (max-width: 768px) {
+      padding: 32px 16px;
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
