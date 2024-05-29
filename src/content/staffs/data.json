@@ -1,0 +1,332 @@
+[
+  {
+    "name": "senoue",
+    "company": "Videomarket CO",
+    "avatar": "senoue.png",
+    "favoritePackages": ["maps"]
+  },
+  {
+    "name": "a2",
+    "company": "カミナシ",
+    "avatar": "a2.png",
+    "favoritePackages": ["log/slog"]
+  },
+  {
+    "name": "gami",
+    "company": "株式会社mikan",
+    "avatar": "gami.png",
+    "favoritePackages": ["net/http"]
+  },
+  {
+    "name": "chihiro",
+    "company": null,
+    "avatar": "chihiro.jpg",
+    "favoritePackages": []
+  },
+  {
+    "name": "Yoshi Yamaguchi",
+    "company": "Google",
+    "avatar": "yoshi_yamaguchi.jpg",
+    "favoritePackages": ["net/http/pprof"]
+  },
+  {
+    "name": "すてにゃん",
+    "company": null,
+    "avatar": "sutenyan.jpg",
+    "favoritePackages": ["net/http"]
+  },
+  {
+    "name": "sago35",
+    "company": "tinygo.org",
+    "avatar": "sago35.png",
+    "favoritePackages": ["machine/usb/hid/keyboard"]
+  },
+  {
+    "name": "てるい",
+    "company": "株式会社Showcase Gig",
+    "avatar": "terui.jpg",
+    "favoritePackages": ["errors"]
+  },
+  {
+    "name": "Nakagawa Ryotaku",
+    "company": "Money Forward",
+    "avatar": "nakagawa_ryotaku.png",
+    "favoritePackages": ["context"]
+  },
+  {
+    "name": "uji",
+    "company": "NOT A HOTEL株式会社",
+    "avatar": "uji.jpg",
+    "favoritePackages": ["crypto"]
+  },
+  {
+    "name": "Masahiro Sakuraba",
+    "avatar": "masahiro_sakuraba.png",
+    "company": null,
+    "favoritePackages": ["testing"]
+  },
+  {
+    "name": "jackchuka",
+    "company": "Tailor.tech",
+    "avatar": "jackchuka.png",
+    "favoritePackages": ["encoding/*"]
+  },
+  {
+    "name": "らぴす",
+    "avatar": "rapisu.jpg",
+    "company": null,
+    "favoritePackages": ["99designs/gqlgen"]
+  },
+  {
+    "name": "Onoe",
+    "avatar": "onoe.jpeg",
+    "company": null,
+    "favoritePackages": ["net"]
+  },
+  {
+    "name": "もっちー",
+    "avatar": "mocchi.jpeg",
+    "company": null,
+    "favoritePackages": ["log/slog"]
+  },
+  {
+    "name": "もみ",
+    "company": "学生",
+    "avatar": "momi.jpeg",
+    "favoritePackages": ["context"]
+  },
+  {
+    "name": "naotama",
+    "company": "Cybozu",
+    "avatar": "naotama.jpg",
+    "favoritePackages": ["net/http"]
+  },
+  {
+    "name": "okarin",
+    "company": "ハイヤールー",
+    "avatar": "okarin.jpg",
+    "favoritePackages": ["sync"]
+  },
+  {
+    "name": "zundamaru",
+    "company": "Studist",
+    "avatar": "zundamaru.png",
+    "favoritePackages": ["log/slog"]
+  },
+  {
+    "name": "walkure",
+    "company": null,
+    "avatar": "walkure.jpeg",
+    "favoritePackages": ["strings"]
+  },
+  {
+    "name": "いのうえ",
+    "company": null,
+    "avatar": "",
+    "favoritePackages": ["net/http"]
+  },
+  {
+    "name": "shinnosuke.kishida",
+    "company": "SO Technologies株式会社",
+    "avatar": "shinnosuke_kishida.png",
+    "favoritePackages": ["testing"]
+  },
+  {
+    "name": "ケンスケ　ウエノ",
+    "company": null,
+    "avatar": "kensuke_ueno.png",
+    "favoritePackages": ["Gin"]
+  },
+  {
+    "name": "びきニキ",
+    "company": null,
+    "avatar": "bikiniki.webp",
+    "favoritePackages": ["fmt"]
+  },
+  {
+    "name": "Ryo Mimura",
+    "company": "サイボウズ株式会社",
+    "avatar": "ryo_mimura.jpg",
+    "favoritePackages": ["slices"]
+  },
+  {
+    "name": "mikichin",
+    "company": "株式会社メルペイ",
+    "avatar": "mikichin.jpg",
+    "favoritePackages": []
+  },
+  {
+    "name": "ただあき",
+    "company": null,
+    "avatar": "tadaaki.jpg",
+    "favoritePackages": []
+  },
+  {
+    "name": "sivchari",
+    "company": "CyberAgent",
+    "avatar": "sivchari.png",
+    "favoritePackages": ["database/sql"]
+  },
+  {
+    "name": "tamaclaw",
+    "company": "HireRoo",
+    "avatar": "tamaclaw.jpg",
+    "favoritePackages": ["sort"]
+  },
+  {
+    "name": "fujiwo",
+    "company": "CyberAgent, Inc.",
+    "avatar": "fujiwo.png",
+    "favoritePackages": ["sync"]
+  },
+  {
+    "name": "Nozomu Ikuta",
+    "company": null,
+    "avatar": "nozomu_ikuta.png",
+    "favoritePackages": []
+  },
+  {
+    "name": "miki",
+    "company": null,
+    "avatar": "miki.jpg",
+    "favoritePackages": ["net/http"]
+  },
+  {
+    "name": "micchie",
+    "company": "Gophers Japan",
+    "avatar": "micchie.jpeg",
+    "favoritePackages": ["strings"]
+  },
+  {
+    "name": "なかさん",
+    "company": null,
+    "avatar": "",
+    "favoritePackages": ["protobuf"]
+  },
+  {
+    "name": "budougumi0617",
+    "company": "株式会社LayerX",
+    "avatar": "budougumi0617.png",
+    "favoritePackages": ["testing"]
+  },
+  {
+    "name": "Peacock",
+    "company": "TOPGATE. Inc,",
+    "avatar": "peacock.jpg",
+    "favoritePackages": ["text/template"]
+  },
+  {
+    "name": "Suu",
+    "company": null,
+    "avatar": "suu.jpg",
+    "favoritePackages": ["gookit/slog"]
+  },
+  {
+    "name": "Kenta Yamaguchi",
+    "company": "CyberAgent / AI Shift",
+    "avatar": "kenta_yamaguchi.jpeg",
+    "favoritePackages": ["slices"]
+  },
+  {
+    "name": "Takato",
+    "company": null,
+    "avatar": "takato.webp",
+    "favoritePackages": ["gorilla/websocket"]
+  },
+  {
+    "name": "yamato",
+    "company": null,
+    "avatar": "yamato.webp",
+    "favoritePackages": ["labstack/echo"]
+  },
+  {
+    "name": "Douglas Takeuchi",
+    "company": "OLTA",
+    "avatar": "douglas_takeuchi.jpeg",
+    "favoritePackages": ["slices"]
+  },
+  {
+    "name": "remiposo",
+    "company": null,
+    "avatar": "remiposo.png",
+    "favoritePackages": ["io"]
+  },
+  {
+    "name": "tomato3713",
+    "company": "Hatena Co., Ltd.",
+    "avatar": "tomato3713.jpeg",
+    "favoritePackages": ["os"]
+  },
+  {
+    "name": "igaryo",
+    "company": null,
+    "avatar": "igaryo.jpg",
+    "favoritePackages": ["air"]
+  },
+  {
+    "name": "Kizuku",
+    "company": null,
+    "avatar": "kizuku.webp",
+    "favoritePackages": ["net/http"]
+  },
+  {
+    "name": "Yuki Bobier Koshimizu",
+    "company": null,
+    "avatar": "yuki_bobier_koshimizu.jpeg",
+    "favoritePackages": ["runtime"]
+  },
+  {
+    "name": "Ryu-Ichiroh",
+    "company": null,
+    "avatar": "ryu-ichiroh.png",
+    "favoritePackages": ["database/sql"]
+  },
+  {
+    "name": "Gunzi",
+    "company": null,
+    "avatar": "gunzi.jpg",
+    "favoritePackages": ["containernetworking/cni"]
+  },
+  {
+    "name": "sugar-cat",
+    "company": "CyberAgent",
+    "avatar": "sugar-cat.jpeg",
+    "favoritePackages": ["ogen"]
+  },
+  {
+    "name": "Kota Yagi",
+    "company": "Money Forward",
+    "avatar": "kota_yagi.png",
+    "favoritePackages": ["os"]
+  },
+  {
+    "name": "Rei Suzuki",
+    "company": null,
+    "avatar": "rei_suzuki.jpg",
+    "favoritePackages": ["c4go"]
+  },
+  {
+    "name": "N9tE9",
+    "company": "合同会社DMM.com",
+    "avatar": "n9te9.png",
+    "favoritePackages": ["sync"]
+  },
+  {
+    "name": "sadah",
+    "company": null,
+    "avatar": "sadah.jpg",
+    "favoritePackages": ["crypto/ecdsa"]
+  },
+  {
+    "name": "Yosuke Okamoto",
+    "company": "Money Forward",
+    "avatar": "yosuke_okamoto.png",
+    "favoritePackages": ["flag"]
+  },
+  {
+    "name": "HIK＠RI",
+    "company": null,
+    "avatar": "hikari.jpg",
+    "favoritePackages": ["testing", "go-cmp"]
+  }
+]
