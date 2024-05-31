@@ -41,7 +41,20 @@ const sponsors = defineCollection({
   ),
 });
 
+const staffs = defineCollection({
+  type: "data",
+  schema: z.array(
+    z.object({
+      name: z.string(),
+      company: z.string().nullable(),
+      avatar: z.string(),
+      favoritePackages: z.array(z.string()),
+    }),
+  ),
+});
+
 export const collections = {
   sessions,
   sponsors,
+  staffs,
 };

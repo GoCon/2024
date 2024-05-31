@@ -1,0 +1,116 @@
+---
+import { Image } from "astro:assets";
+import { getEntry } from "astro:content";
+import { concatWithBase } from "@utils/concatWithBase";
+
+const staffs = await getEntry("staffs", "data");
+---
+
+<div class="container">
+  <div class="staffs">
+    {
+      staffs.data.map((staff) => (
+        <div class="staff">
+          <Image
+            src={concatWithBase(`staffs/${staff.avatar}`)}
+            width="120"
+            height="120"
+            loading="lazy"
+            alt={staff.name}
+            class="staff-avatar"
+          />
+          <p class="staff-name">{staff.name}</p>
+          <p class="staff-company">{staff.company}</p>
+          <p class="staff-favorite-packages">
+            {staff.favoritePackages.join(", ")}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .staffs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .staff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 342px;
+    text-decoration: none;
+    color: #222;
+    padding: 16px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 1185px) {
+      width: calc(50% - 16px);
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .title {
+    --max-lines: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+    overflow: hidden;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.25;
+    min-height: calc(var(--max-lines) * 1.25em);
+
+    @media screen and (max-width: 768px) {
+      --max-lines: 1;
+    }
+  }
+
+  .staff-avatar {
+    object-fit: cover;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .staff-name {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-weight: bold;
+  }
+
+  .staff-company {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    min-height: 1.5em;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .staff-favorite-packages {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    min-height: 1.5em;
+    font-size: 14px;
+    color: #666;
+  }
+</style>
