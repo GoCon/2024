@@ -21,9 +21,11 @@ const staffs = await getEntry("staffs", "data");
           />
           <p class="staff-name">{staff.name}</p>
           <p class="staff-company">{staff.company}</p>
-          <p class="staff-favorite-packages">
-            {staff.favoritePackages.join(", ")}
-          </p>
+          {!!staff.favoritePackages.length && (
+            <p class="staff-favorite-packages">
+              🩷 {staff.favoritePackages.join(", ")}
+            </p>
+          )}
         </div>
       ))
     }
