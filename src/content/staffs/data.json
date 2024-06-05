@@ -122,7 +122,7 @@
   {
     "name": "いのうえ",
     "company": null,
-    "avatar": "",
+    "avatar": "inoue.jpeg",
     "favoritePackages": ["net/http"]
   },
   {
@@ -181,9 +181,9 @@
   },
   {
     "name": "Nozomu Ikuta",
-    "company": null,
+    "company": "グローバル・ブレイン株式会社",
     "avatar": "nozomu_ikuta.png",
-    "favoritePackages": []
+    "favoritePackages": ["fmt"]
   },
   {
     "name": "miki",
