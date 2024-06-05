@@ -324,9 +324,27 @@
     "favoritePackages": ["flag"]
   },
   {
-    "name": "HIK＠RI",
+    "name": "Ras",
+    "company": "Tokyo Institute of Technology",
+    "avatar": "ras.png",
+    "favoritePackages": ["embed"]
+  },
+  {
+    "name": "tenntenn",
+    "company": "Gophers Japan",
+    "avatar": "tenntenn.png",
+    "favoritePackages": ["go"]
+  },
+  {
+    "name": "luccafort",
+    "company": "株式会社マネーフォワード",
+    "avatar": "luccafort.jpg",
+    "favoritePackages": ["io"]
+  },
+  {
+    "name": "lestrrat",
     "company": null,
-    "avatar": "hikari.jpg",
-    "favoritePackages": ["testing", "go-cmp"]
+    "avatar": "lestrrat.jpeg",
+    "favoritePackages": ["bytes"]
   }
 ]
