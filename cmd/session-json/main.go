@@ -1,6 +1,6 @@
 package main
 
-// csv :  https://sessionize.com/api/v2/3xsxwh64/view/All
+// curl https://sessionize.com/api/v2/3xsxwh64/view/All > ./cmd/session-json/all.json
 // go run ./cmd/session-json > ./src/content/sessions/data.json
 
 import (
@@ -71,6 +71,7 @@ func output(sessions Sessions, w io.Writer) error {
 		"648689": 20,
 		"647566": 21,
 		"649845": 22,
+		"701753": 23,
 	}
 	for i, s := range sessions.Sessions {
 		if id, ok := m[s.ID]; ok {

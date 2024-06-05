@@ -379,6 +379,33 @@
       "isConfirmed": true
     },
     {
+      "id": "701753",
+      "title": "DELISH KITCHENにおけるマスタデータのキャッシュ戦略とその歴史的変遷",
+      "description": "DELISH KITCHENで扱うデータには、大別してレシピデータなどの主に入稿によってしか変動しないものと、お気に入りなどユーザの行動によって変動するものとが存在しています。\r\n両者を比較すると、マスタデータの方は変動性が低い傾向があるため、キャッシュについても異なる戦略が必要となります。\r\nDELISH KITCHENのリリース当初から現在に至るまでのキャッシュ戦略の変遷や、その際どのような試行錯誤を経てきたか、また今後の展望について、Goの実装を交えてお話します。",
+      "startsAt": "2024-06-08T08:50:00Z",
+      "endsAt": "2024-06-08T09:10:00Z",
+      "isServiceSession": false,
+      "isPlenumSession": true,
+      "speakers": ["5a9d337d-0a79-4c4e-bf99-e33db73885fa"],
+      "categoryItems": [248142, 248145],
+      "questionAnswers": [
+        {
+          "questionId": 70052,
+          "answerValue": "false"
+        },
+        {
+          "questionId": 70053,
+          "answerValue": "true"
+        }
+      ],
+      "roomId": 44252,
+      "liveUrl": null,
+      "recordingUrl": null,
+      "status": "Accepted",
+      "isInformed": false,
+      "isConfirmed": false
+    },
+    {
       "id": "649907",
       "title": "Making Sense of How Rangefunc Works: Just 1 Tip in 5 Minutes",
       "description": "Go 1.22 contains a preliminary implementation of Rangefunc. The Go team is considering adding this feature for a future Go release, so it's a good idea to start getting the hang of it now. However, its behavior does not seem to be straightforward. In this lightning talk, I'll introduce just one tip that can serve as a key to understanding, all in five minutes.\r\n\r\nGo 1.22にはRangefuncの仮実装が含まれます。Go チームは将来の Go リリースにこの機能を追加することを検討しているため、今のうちから使いこなす準備をしておきたいところです。しかし、その動作は決して分かりやすいものではないように感じます。そこで、理解の糸口となる1つのコツを5分で紹介します。",
@@ -596,6 +623,20 @@
     }
   ],
   "speakers": [
+    {
+      "id": "5a9d337d-0a79-4c4e-bf99-e33db73885fa",
+      "firstName": "Akira",
+      "lastName": "Uchihara",
+      "bio": "古くはパソコン通信時代からシステム開発に携わり、その後ヤフーやかつての頓智ドットでセカイカメラの開発をしたりCTOやったりとなんだかんだで今にいたる。エブリー入社後はDELISH KITCHENでインフラ基盤刷新やプッシュ通知機構構築や課金システム構築など主にバックエンド、インフラ系で手広くやってます。",
+      "tagLine": "株式会社エブリー開発本部 TIMELINE開発部部長, DELISH KITCHEN開発部副部長",
+      "profilePicture": "https://sessionize.com/image/89c6-400o400o1-NvSppqRoJiMDhVZyJV87c8.jpg",
+      "isTopSpeaker": false,
+      "links": [],
+      "sessions": [701753],
+      "fullName": "Akira Uchihara",
+      "categoryItems": [],
+      "questionAnswers": []
+    },
     {
       "id": "fffe7623-17b8-4a25-b1f6-819ce00b7384",
       "firstName": "Kazuhiro",
