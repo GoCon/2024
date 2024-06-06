@@ -324,6 +324,12 @@
     "favoritePackages": ["flag"]
   },
   {
+    "name": "HIK＠RI",
+    "company": null,
+    "avatar": "hikari.jpg",
+    "favoritePackages": ["testing", "go-cmp"]
+  },
+  {
     "name": "Ras",
     "company": "Tokyo Institute of Technology",
     "avatar": "ras.png",
