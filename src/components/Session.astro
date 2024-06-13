@@ -24,6 +24,19 @@ const { session } = Astro.props;
       <p class="attr">{getLevelLabel(session.level)}</p>
       <p class="attr">{getTypeLabel(session.type)}</p>
     </div>
+    <div class="medias">
+      <p>
+        {
+          session.slide && (
+            <button class="slide">
+              <a href={session.slide} class="slide-text">
+                スライドを見る
+              </a>
+            </button>
+          )
+        }
+      </p>
+    </div>
     <div class="description">
       <Markdown of={session.description} />
     </div>
@@ -152,5 +165,51 @@ const { session } = Astro.props;
 
   .speaker-twitter {
     align-self: flex-start;
+  }
+
+  .medias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide {
+    min-width: 360px;
+    display: inline-flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 100px;
+    padding: 16px 24px;
+    background-color: rgb(77, 148, 230);
+  }
+  .slide-text {
+    margin: 0px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family:
+      "__Poppins_bfe252",
+      "__Poppins_Fallback_bfe252",
+      Helvetica Neue,
+      Arial,
+      Hiragino Kaku Gothic ProN,
+      Hiragino Sans,
+      Meiryo,
+      sans-serif;
   }
 </style>

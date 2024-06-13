@@ -10,6 +10,7 @@ const sessions = defineCollection({
       track: z.enum(["room-1", "room-2"]),
       title: z.string(),
       description: z.string(),
+      slide: z.string().optional(),
       speaker: z.object({
         avatar: z.string(),
         name: z.string(),
