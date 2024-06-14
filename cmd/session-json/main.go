@@ -47,35 +47,41 @@ func run() error {
 	return nil
 }
 
+type SessionMap struct {
+	No    int
+	Slide string
+}
+
 func output(sessions Sessions, w io.Writer) error {
-	m := map[string]int{
-		"649102": 1,
-		"644546": 2,
-		"648209": 3,
-		"649848": 4,
-		"646485": 5,
-		"637496": 6,
-		"649626": 7,
-		"649675": 8,
-		"649710": 9,
-		"646478": 10,
-		"648864": 11,
-		"649858": 12,
-		"649860": 13,
-		"647542": 14,
-		"632985": 15,
-		"649096": 16,
-		"648614": 17,
-		"649907": 18,
-		"649897": 19,
-		"648689": 20,
-		"647566": 21,
-		"649845": 22,
-		"701753": 23,
+	m := map[string]SessionMap{
+		"649102": {No: 1, Slide: "https://speakerdeck.com/utgwkk/go-conference-2024"},
+		"644546": {No: 2, Slide: "https://audience.ahaslides.com/cl965inb88/review?lookback-tab=slides"},
+		"648209": {No: 3, Slide: "https://speakerdeck.com/k1low/go-conference-2024"},
+		"649848": {No: 4, Slide: "https://speakerdeck.com/masumomo/custom-logging-with-slog-making-logging-fun-again"},
+		"646485": {No: 5, Slide: "https://github.com/97vaibhav/Go-Conference-2024-Tokyo"},
+		"637496": {No: 6, Slide: "https://speakerdeck.com/yamatoya/go1-dot-21karadao-ru-sareta-go-toolchainnoshi-zu-miwomarututojie-shuo/"},
+		"649626": {No: 7, Slide: "https://docs.google.com/presentation/d/e/2PACX-1vSWVLveC-AdAoBebAVx3lU4C8bUSBN5_vx-1x_4AWgwddild-kkEqypIp0ox8gGA32SMPu3xchsqGDw/pub?start=false&loop=false&delayms=3000&slide=id.g2e3b19212c6_0_0"},
+		"649675": {No: 8, Slide: "https://speakerdeck.com/shohata/gonolanguage-server-protocolshi-zhuang-gopls-nozi-dong-bu-wan-noshi-zu-miwoxue-bu"},
+		"649710": {No: 9, Slide: "https://nymphium.github.io/pdf/gocon2024.html"},
+		"646478": {No: 10, Slide: "https://speakerdeck.com/replu/understanding-the-swisstable-being-considered-to-improve-map-performance"},
+		"648864": {No: 11, Slide: "https://speakerdeck.com/biwashi/go-conference-2024-automating-feature-flag-instrumentation-by-constructing-go-ast-from-unified-diff-format"},
+		"649858": {No: 12, Slide: "https://speakerdeck.com/convto/understanding-gob-encoding"},
+		"649860": {No: 13, Slide: "https://docs.google.com/presentation/d/1X5dXShWTmjhQbXH7vXHnTLJ5Tca7QhU4Pq1YugGiIHs/edit#slide=id.p"},
+		"647542": {No: 14, Slide: "https://speakerdeck.com/qualiarts/xiang-jie-fixing-for-loops-in-go-1-dot-22-zi-zuo-linterwogolangci-linthekontoribiyutositahua"},
+		"632985": {No: 15, Slide: "https://speakerdeck.com/kuro_kurorrr/deep-dive-into-deadcode"},
+		"649096": {No: 16, Slide: "https://speakerdeck.com/shinnosuke_kishida/go-get-dekao-lu-siteiru-huairusisutemunoju-dong-nituite"},
+		"648614": {No: 17, Slide: "https://note.com/thousanda/n/n2b1c43b1814b"},
+		"649907": {No: 18, Slide: ""},
+		"649897": {No: 19, Slide: "https://speakerdeck.com/abekoh/table-driven-testing-nifu-rarenai-gonotesutopatan"},
+		"648689": {No: 20, Slide: "https://speakerdeck.com/bmf_san/zi-zuo-httprutakaraxin-siiservemuxhe"},
+		"647566": {No: 21, Slide: "https://speakerdeck.com/uhzz/zi-dong-sheng-cheng-saretahttpendopointogotonikasutamumidoruueawocha-ru-sitaihua"},
+		"649845": {No: 22, Slide: "https://speakerdeck.com/bellwood4486/goconference2024lt-proxy"},
+		"701753": {No: 23, Slide: "https://speakerdeck.com/uchihara/delish-kitchenniokerumasutadetakiyatusiyuzhan-lue-tosonoli-shi-de-bian-qian"},
 	}
 	for i, s := range sessions.Sessions {
 		if id, ok := m[s.ID]; ok {
-			sessions.Sessions[i].ID = fmt.Sprintf("%d", id)
+			sessions.Sessions[i].ID = fmt.Sprintf("%d", id.No)
+			sessions.Sessions[i].Slide = id.Slide
 		}
 	}
 
@@ -142,6 +148,7 @@ func output(sessions Sessions, w io.Writer) error {
 
 		fmt.Printf("    \"title\": %q,\n", s.Title)
 		fmt.Printf("    \"description\": %q,\n", s.Description)
+		fmt.Printf("    \"slide\": %q,\n", s.Slide)
 
 		fmt.Printf("    \"speaker\": {\n")
 		speaker := Speaker{}
@@ -189,6 +196,7 @@ type Session struct {
 	ID               string           `json:"id"`
 	Title            string           `json:"title"`
 	Description      string           `json:"description"`
+	Slide            string           `json:"slide"`
 	StartsAt         time.Time        `json:"startsAt"`
 	EndsAt           time.Time        `json:"endsAt"`
 	IsServiceSession bool             `json:"isServiceSession"`
