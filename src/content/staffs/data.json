@@ -288,6 +288,12 @@
     "favoritePackages": ["containernetworking/cni"]
   },
   {
+    "name": "haruayma480",
+    "company": null,
+    "avatar": "haruyama480.jpg",
+    "favoritePackages": ["os", "runtime"]
+  },
+  {
     "name": "sugar-cat",
     "company": "CyberAgent",
     "avatar": "sugar-cat.jpeg",
